@@ -13,3 +13,7 @@ desktop.ini
 site/
 docs/articles/
 docs/study-plan.md
+
+# Python local environment
+.venv/
+.vendor/

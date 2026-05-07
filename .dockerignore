@@ -1,0 +1,11 @@
+.git
+.venv
+.vendor
+site
+docs/articles
+docs/study-plan.md
+__pycache__
+*.pyc
+*.pyo
+*.log
+*.tmp
