@@ -8,3 +8,8 @@ desktop.ini
 # Temporary files
 *.tmp
 *.log
+
+# MkDocs generated output
+site/
+docs/articles/
+docs/study-plan.md

@@ -1,0 +1,74 @@
+site_name: CCNA Study Project
+site_description: Конспекты и статьи для подготовки к CCNA
+site_author: CCNA Study Project
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Темная тема
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+
+nav:
+  - Главная: index.md
+  - План обучения: study-plan.md
+  - Статьи:
+      - Обзор: articles/index.md
+      - Week 01:
+          - Обзор недели: articles/2026-05/week-01/index.md
+          - 01 - What is a Network?: articles/2026-05/week-01/01-what-is-a-network.md
+          - 02 - What is a Switch?: articles/2026-05/week-01/02-what-is-a-switch.md
+          - 03 - What is a Router?: articles/2026-05/week-01/03-what-is-a-router.md
+          - 04 - What is TCP/IP and OSI?: articles/2026-05/week-01/04-what-is-tcp-ip-and-osi.md
+          - 05 - REAL LIFE Example: articles/2026-05/week-01/05-real-life-example-tcp-ip-and-osi-layers.md
+          - 06 - The YouTube OSI Model Story: articles/2026-05/week-01/06-the-youtube-osi-model-story.md
+          - 07 - Network Design Warning: articles/2026-05/week-01/07-do-not-design-your-network-like-this.md
+          - 08 - Data Center Networks: articles/2026-05/week-01/08-data-center-networks-what-do-they-look-like.md
+          - 09 - WAN Is Not Always Internet: articles/2026-05/week-01/09-wan-its-not-the-internet-sometimes.md
+          - 10 - Home Network Security: articles/2026-05/week-01/10-lets-hack-your-home-network.md
+          - 11 - Hybrid Cloud: articles/2026-05/week-01/11-you-need-to-learn-hybrid-cloud-right-now.md
+          - 12 - Ethernet Cables: articles/2026-05/week-01/12-forcing-my-kids-to-make-ethernet-cables.md
+          - 13 - Power over Ethernet: articles/2026-05/week-01/13-why-power-over-ethernet-poe-is-amazing.md
+          - 14 - Fiber Optic Cables: articles/2026-05/week-01/14-fiber-optic-cables-what-you-need-to-know.md
+          - 15 - Port Security: articles/2026-05/week-01/15-i-can-hack-your-switches-protect-yourself-with-port-security.md
+          - 16 - Packet Tracer Importance: articles/2026-05/week-01/16-why-this-skill-is-important-packet-tracer.md
+          - 17 - Installing Packet Tracer: articles/2026-05/week-01/17-installing-packet-tracer.md
+          - 18 - Packet Tracer Essentials: articles/2026-05/week-01/18-final-essential-packet-tracer-functions.md
+          - 19 - Packet Tracer Next Steps: articles/2026-05/week-01/19-what-now-packet-tracer.md
+          - 20 - Network Building Skill: articles/2026-05/week-01/20-why-this-skill-is-important-network-building.md
+          - 21 - Castle Rysen RFP: articles/2026-05/week-01/21-castle-rysen-coffee-rfp-overview.md
