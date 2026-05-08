@@ -1,6 +1,6 @@
-site_name: CCNA Study Project
-site_description: Конспекты и статьи для подготовки к CCNA
-site_author: CCNA Study Project
+site_name: Learning Materials
+site_description: Учебная библиотека по CCNA, английскому и будущим направлениям
+site_author: Learning Materials
 docs_dir: docs
 site_dir: site
 
@@ -46,29 +46,42 @@ plugins:
 
 nav:
   - Главная: index.md
-  - План обучения: study-plan.md
-  - Статьи:
-      - Обзор: articles/index.md
+  - CCNA:
+      - Обзор: ccna/articles/index.md
+      - План обучения: ccna/study-plan.md
       - Week 01:
-          - Обзор недели: articles/2026-05/week-01/index.md
-          - 01 - What is a Network?: articles/2026-05/week-01/01-what-is-a-network.md
-          - 02 - What is a Switch?: articles/2026-05/week-01/02-what-is-a-switch.md
-          - 03 - What is a Router?: articles/2026-05/week-01/03-what-is-a-router.md
-          - 04 - What is TCP/IP and OSI?: articles/2026-05/week-01/04-what-is-tcp-ip-and-osi.md
-          - 05 - REAL LIFE Example: articles/2026-05/week-01/05-real-life-example-tcp-ip-and-osi-layers.md
-          - 06 - The YouTube OSI Model Story: articles/2026-05/week-01/06-the-youtube-osi-model-story.md
-          - 07 - Network Design Warning: articles/2026-05/week-01/07-do-not-design-your-network-like-this.md
-          - 08 - Data Center Networks: articles/2026-05/week-01/08-data-center-networks-what-do-they-look-like.md
-          - 09 - WAN Is Not Always Internet: articles/2026-05/week-01/09-wan-its-not-the-internet-sometimes.md
-          - 10 - Home Network Security: articles/2026-05/week-01/10-lets-hack-your-home-network.md
-          - 11 - Hybrid Cloud: articles/2026-05/week-01/11-you-need-to-learn-hybrid-cloud-right-now.md
-          - 12 - Ethernet Cables: articles/2026-05/week-01/12-forcing-my-kids-to-make-ethernet-cables.md
-          - 13 - Power over Ethernet: articles/2026-05/week-01/13-why-power-over-ethernet-poe-is-amazing.md
-          - 14 - Fiber Optic Cables: articles/2026-05/week-01/14-fiber-optic-cables-what-you-need-to-know.md
-          - 15 - Port Security: articles/2026-05/week-01/15-i-can-hack-your-switches-protect-yourself-with-port-security.md
-          - 16 - Packet Tracer Importance: articles/2026-05/week-01/16-why-this-skill-is-important-packet-tracer.md
-          - 17 - Installing Packet Tracer: articles/2026-05/week-01/17-installing-packet-tracer.md
-          - 18 - Packet Tracer Essentials: articles/2026-05/week-01/18-final-essential-packet-tracer-functions.md
-          - 19 - Packet Tracer Next Steps: articles/2026-05/week-01/19-what-now-packet-tracer.md
-          - 20 - Network Building Skill: articles/2026-05/week-01/20-why-this-skill-is-important-network-building.md
-          - 21 - Castle Rysen RFP: articles/2026-05/week-01/21-castle-rysen-coffee-rfp-overview.md
+          - Обзор недели: ccna/articles/2026-05/week-01/index.md
+          - 01 - What is a Network?: ccna/articles/2026-05/week-01/01-what-is-a-network.md
+          - 02 - What is a Switch?: ccna/articles/2026-05/week-01/02-what-is-a-switch.md
+          - 03 - What is a Router?: ccna/articles/2026-05/week-01/03-what-is-a-router.md
+          - 04 - What is TCP/IP and OSI?: ccna/articles/2026-05/week-01/04-what-is-tcp-ip-and-osi.md
+          - 05 - REAL LIFE Example: ccna/articles/2026-05/week-01/05-real-life-example-tcp-ip-and-osi-layers.md
+          - 06 - The YouTube OSI Model Story: ccna/articles/2026-05/week-01/06-the-youtube-osi-model-story.md
+          - 07 - Network Design Warning: ccna/articles/2026-05/week-01/07-do-not-design-your-network-like-this.md
+          - 08 - Data Center Networks: ccna/articles/2026-05/week-01/08-data-center-networks-what-do-they-look-like.md
+          - 09 - WAN Is Not Always Internet: ccna/articles/2026-05/week-01/09-wan-its-not-the-internet-sometimes.md
+          - 10 - Home Network Security: ccna/articles/2026-05/week-01/10-lets-hack-your-home-network.md
+          - 11 - Hybrid Cloud: ccna/articles/2026-05/week-01/11-you-need-to-learn-hybrid-cloud-right-now.md
+          - 12 - Ethernet Cables: ccna/articles/2026-05/week-01/12-forcing-my-kids-to-make-ethernet-cables.md
+          - 13 - Power over Ethernet: ccna/articles/2026-05/week-01/13-why-power-over-ethernet-poe-is-amazing.md
+          - 14 - Fiber Optic Cables: ccna/articles/2026-05/week-01/14-fiber-optic-cables-what-you-need-to-know.md
+          - 15 - Port Security: ccna/articles/2026-05/week-01/15-i-can-hack-your-switches-protect-yourself-with-port-security.md
+          - 16 - Packet Tracer Importance: ccna/articles/2026-05/week-01/16-why-this-skill-is-important-packet-tracer.md
+          - 17 - Installing Packet Tracer: ccna/articles/2026-05/week-01/17-installing-packet-tracer.md
+          - 18 - Packet Tracer Essentials: ccna/articles/2026-05/week-01/18-final-essential-packet-tracer-functions.md
+          - 19 - Packet Tracer Next Steps: ccna/articles/2026-05/week-01/19-what-now-packet-tracer.md
+          - 20 - Network Building Skill: ccna/articles/2026-05/week-01/20-why-this-skill-is-important-network-building.md
+          - 21 - Castle Rysen RFP: ccna/articles/2026-05/week-01/21-castle-rysen-coffee-rfp-overview.md
+  - Englishe:
+      - Обзор: englishe/index.md
+      - Present Simple: englishe/present-simple.md
+      - Present Continuous: englishe/present-continuous.md
+      - Present Perfect: englishe/present-perfect.md
+      - Present Perfect Continuous: englishe/present-perfect-continuous.md
+      - Past Simple: englishe/past-simple.md
+      - Past Continuous: englishe/past-continuous.md
+      - Past Perfect: englishe/past-perfect.md
+      - Future Simple: englishe/future-simple.md
+      - Future Continuous: englishe/future-continuous.md
+      - Be going to: englishe/be-going-to.md
+      - Have Something Done: englishe/have-something-done.md

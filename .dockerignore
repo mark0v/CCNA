@@ -4,6 +4,9 @@
 site
 docs/articles
 docs/study-plan.md
+docs/ccna/articles
+docs/ccna/study-plan.md
+docs/englishe
 __pycache__
 *.pyc
 *.pyo

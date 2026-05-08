@@ -1,4 +1,4 @@
-# Deploy CCNA Site
+# Deploy Learning Materials
 
 Проект собирается как статический сайт на MkDocs Material и отдается через nginx в Docker.
 
@@ -95,11 +95,11 @@ docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build c
 ## Как это работает
 
 ```text
-articles/ + STUDY_PLAN.md
+articles/ + englishe/ + STUDY_PLAN.md
 -> scripts/sync_docs.py
 -> docs/
 -> mkdocs build
 -> nginx container
 ```
 
-`articles/` остается главным источником статей. Папка `docs/articles/` генерируется перед сборкой и не хранится в git.
+`articles/` остается главным источником CCNA-статей, а `englishe/` - источником материалов по английскому. Сгенерированные папки внутри `docs/` не хранятся в git.
