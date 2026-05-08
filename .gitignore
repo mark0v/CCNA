@@ -8,6 +8,8 @@ desktop.ini
 # Temporary files
 *.tmp
 *.log
+tmp/
+temp/
 
 # MkDocs generated output
 site/
@@ -17,3 +19,9 @@ docs/study-plan.md
 # Python local environment
 .venv/
 .vendor/
+
+# Local TLS certificates and private keys
+certs/
+*.key
+*.csr
+*.srl

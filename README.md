@@ -77,6 +77,14 @@ http://<host-ip>:8080
 
 Подробности деплоя: [DEPLOY.md](DEPLOY.md).
 
+Для локального HTTPS есть отдельный override:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build ccna-site
+```
+
+Сертификаты создаются локально и не хранятся в git.
+
 ## Что не хранится в git
 
 В репозиторий не должны попадать локальные окружения, собранный сайт и сгенерированные копии документов:
