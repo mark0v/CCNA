@@ -46,6 +46,10 @@ def copy_articles() -> None:
     target_root = CCNA_DOCS / "articles"
     target_root.mkdir(parents=True, exist_ok=True)
 
+    for source_dir in sorted(path for path in ARTICLES.glob("*/*") if path.is_dir()):
+        relative = source_dir.relative_to(ARTICLES)
+        (target_root / relative).mkdir(parents=True, exist_ok=True)
+
     for source in ARTICLES.rglob("*.md"):
         if source.name == ".gitkeep":
             continue
