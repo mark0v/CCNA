@@ -7,77 +7,77 @@ Tags: staging, switch, router, access point, server, lan, wan, mdf, redundancy, 
 
 ## Summary
 
-Staging network equipment means building and testing the network setup before installing it on site. Instead of opening boxes at NetworkChuck Coffee and hoping everything works, you power on the gear, connect the pieces, label cables and verify the basic design in a safe environment first.
+Staging network equipment - это подготовка и проверка сетевого оборудования до установки на реальной площадке. Вместо того чтобы приехать в NetworkChuck Coffee, открыть коробки и надеяться, что все заработает, оборудование лучше заранее включить, соединить, промаркировать и проверить в спокойной среде.
 
-Main idea: stage first, install second. The switch ties the local wired network together, the access point extends it over WiFi, the router connects the LAN to the WAN/internet, and staging helps catch mistakes before they become expensive on-site problems.
+Главная мысль: сначала staging, потом installation. Switch связывает wired LAN, access point расширяет сеть в Wi-Fi, router соединяет LAN с WAN/internet, а staging помогает поймать ошибки до того, как они станут проблемами на рабочей площадке.
 
 ## Key Points
 
-- Staging means setting up network equipment before the real installation.
-- Staging can happen at home, in an office or on a workbench.
-- The goal is to confirm power, cables, ports and basic design before going on site.
-- A switch is the center of the local wired LAN.
-- Devices like registers, servers, office PCs, cameras and APs often plug into the switch.
-- A 24-port switch is only an example; the key idea is having enough Ethernet ports for devices.
-- Multiple switches can provide flexibility and redundancy.
-- Redundancy means backup/resilience if something fails.
-- Two switches can help avoid one single failure point, but also add design choices.
-- Switches are connected together so they can share traffic.
-- Modern switches usually support Auto-MDIX for easier switch-to-switch cabling.
-- Servers provide services to clients on the network.
-- Clients consume services from servers.
-- Wireless access points extend the wired network into the air.
-- Cable colors are for organization; color has no inherent technical meaning.
-- The router connects the local LAN to the outside WAN/internet.
-- ISP means Internet Service Provider.
-- Router/firewall functions often control what traffic is allowed or blocked.
-- Labeling cables and ports before installation prevents mistakes.
-- MDF means Main Distribution Facility, the central place where network gear lives.
+- Staging означает предварительную сборку и проверку сетевого оборудования.
+- Staging можно делать дома, в офисе или на workbench.
+- Цель - проверить питание, cables, ports и базовый design до выезда на site.
+- Switch - центр локальной проводной LAN.
+- Registers, servers, office PCs, cameras и APs обычно подключаются к switch.
+- 24-port Cisco switch в статье - просто пример.
+- Multiple switches дают гибкость и могут помочь с redundancy.
+- Redundancy означает запасной вариант или устойчивость при отказе.
+- Two switches могут снизить риск одного failure point, но добавляют design decisions.
+- Switches соединяются между собой, чтобы обмениваться traffic.
+- Современные switches обычно поддерживают Auto-MDIX.
+- Servers предоставляют services.
+- Clients потребляют services.
+- Wireless access point расширяет wired network в Wi-Fi.
+- Цвета кабелей нужны для организации, но сами по себе технического смысла не имеют.
+- Router соединяет local LAN с outside WAN/internet.
+- ISP означает Internet Service Provider.
+- Router/firewall часто контролирует allowed/blocked traffic.
+- Labels на cables и ports уменьшают количество ошибок.
+- MDF означает Main Distribution Facility - центральное место для network gear.
 
 ## Notes
 
-### Build It Before You Need It
+### Build it before you need it
 
-Staging is the habit of building the network before the real installation.
+Staging - это привычка собрать сеть до реальной установки.
 
-Instead of doing this first on site:
+Плохой подход:
 
 ```text
 Open boxes -> guess -> plug things in -> hope it works
 ```
 
-Do this first in a safe place:
+Хороший подход:
 
 ```text
 Unbox -> power on -> connect -> label -> test -> install
 ```
 
-Staging turns surprises into small problems instead of live-site emergencies.
+Staging превращает неприятные сюрпризы в маленькие задачи, а не в emergency во время работы кофейни.
 
-### Why Staging Matters
+### Почему staging важен
 
-On site, mistakes are expensive.
+На реальной площадке ошибки стоят дороже.
 
-Possible problems:
+Возможные проблемы:
 
-- access point does not power up;
-- switch port is bad;
-- router is not configured as expected;
-- wrong cables are packed;
-- power adapter is missing;
-- device firmware or settings are not ready;
-- labels are missing;
-- physical layout is unclear.
+- access point не включается;
+- switch port неисправен;
+- router настроен не так, как ожидалось;
+- не хватает правильного cable;
+- забыли power adapter;
+- firmware/settings не готовы;
+- labels отсутствуют;
+- physical layout непонятен.
 
-In staging, these are annoying but manageable. In a coffee shop with customers waiting, they become pressure.
+В staging это раздражает, но не ломает бизнес. В работающей кофейне с клиентами это уже давление.
 
-### The Switch Is the Center of the LAN
+### Switch как центр LAN
 
-The switch is usually the central device for the local wired network.
+Switch обычно является центральным устройством для local wired network.
 
-LAN means Local Area Network.
+LAN означает Local Area Network.
 
-Devices that may plug into the switch:
+К switch могут подключаться:
 
 - registers/POS terminals;
 - wireless access points;
@@ -88,100 +88,92 @@ Devices that may plug into the switch:
 - network storage;
 - other switches.
 
-Simple model:
+Модель:
 
 ```text
 LAN devices -> switch
 ```
 
-The switch ties the internal network together.
+Switch связывает внутреннюю сеть.
 
-### Port Count
+### Port count
 
-The article uses a 24-port Cisco switch as an example.
+В статье используется 24-port Cisco switch.
 
-The exact model is not the point.
-
-The important idea:
+Модель не главное. Главное:
 
 ```text
-A switch gives devices Ethernet ports to connect to the LAN.
+Switch дает Ethernet ports для подключения устройств к LAN.
 ```
 
-When planning, think about:
+При планировании нужно учитывать:
 
-- number of current devices;
+- current devices;
 - spare ports;
 - future growth;
 - uplinks;
 - APs and cameras;
-- whether PoE is required.
+- PoE requirements.
 
-### One Switch vs Multiple Switches
+### Один switch или несколько
 
-Sometimes one larger switch is enough. Sometimes more than one switch makes sense.
+Иногда одного большого switch достаточно. Иногда лучше несколько.
 
-Reasons to use multiple switches:
+Причины использовать multiple switches:
 
-- more flexibility;
-- more available ports;
-- physical layout;
+- больше гибкости;
+- больше портов;
+- физическая планировка;
 - redundancy;
-- separation between areas;
+- separation между зонами;
 - future growth.
 
 Tradeoff:
 
 ```text
-More devices can add resilience,
-but also add more devices that can fail and must be managed.
+Больше устройств может дать resilience,
+но также добавляет устройства, которые нужно управлять и которые тоже могут ломаться.
 ```
 
 ### Redundancy
 
-Redundancy means having backup/resilience if something fails.
+Redundancy означает backup/resilience при отказе.
 
-The lesson's mindset:
+Ментальная модель:
 
 ```text
 Two is one, one is none.
 ```
 
-If one switch is the only central point and it dies, the network may be down.
+Если единственный switch умирает, сеть может остановиться. Несколько switches могут снизить риск, если design сделан грамотно.
 
-Multiple switches can reduce that risk when designed properly.
+### Connecting switches
 
-### Connecting Switches
-
-If you use two switches, they need to connect to each other so traffic can pass between devices on both switches.
-
-Simple model:
+Если используются two switches, их нужно соединить между собой.
 
 ```text
 Switch A <-> Switch B
 ```
 
-Older environments sometimes required thinking about crossover cables for switch-to-switch links.
-
-Modern gear usually supports Auto-MDIX, which detects and adjusts the transmit/receive behavior automatically.
+Раньше для switch-to-switch links иногда приходилось думать о crossover cables. Современное оборудование обычно поддерживает Auto-MDIX.
 
 ### Auto-MDIX
 
-Auto-MDIX makes modern cabling easier.
+Auto-MDIX упрощает cabling.
 
-Plain-English meaning:
+Plain-English:
 
 ```text
-The switch figures out how to communicate over the cable automatically.
+Switch сам понимает, как общаться по cable.
 ```
 
-This reduces the need to manually worry about straight-through vs crossover cables in most modern setups.
+Это снижает необходимость вручную выбирать straight-through или crossover cable в большинстве современных setup.
 
-### Servers and Clients
+### Servers and clients
 
-A server provides services to the network.
+Server предоставляет services.
 
-Examples of services:
+Примеры services:
 
 - file storage;
 - media;
@@ -190,9 +182,7 @@ Examples of services:
 - authentication;
 - backups.
 
-A client consumes those services.
-
-Examples of clients:
+Client потребляет эти services:
 
 - laptops;
 - tablets;
@@ -200,43 +190,31 @@ Examples of clients:
 - office PCs;
 - phones.
 
-Simple model:
+Модель:
 
 ```text
 Client -> requests service -> server
 ```
 
-### Wireless Access Point
+### Wireless access point
 
-A wireless access point extends the wired network into the air.
+Wireless access point расширяет wired network в air.
 
-The AP usually connects to the switch with Ethernet.
-
-Simple model:
+AP обычно подключается к switch через Ethernet.
 
 ```text
 Wireless clients -> AP -> switch -> LAN/WAN
 ```
 
-The AP gives WiFi access to:
+AP дает Wi-Fi для phones, laptops, tablets, handheld business devices и customer devices.
 
-- phones;
-- laptops;
-- tablets;
-- handheld business devices;
-- customer devices.
+### Cable colors
 
-The network may feel wireless to users, but the AP normally depends on the wired LAN.
+Цвет кабеля сам по себе не меняет Ethernet behavior.
 
-### Cable Colors
+Blue cable не становится "server cable" только потому, что он blue.
 
-Cable colors do not inherently change how Ethernet works.
-
-A blue cable is not technically different from a yellow cable just because of color.
-
-Colors are useful for organization.
-
-Examples:
+Цвета полезны как local convention:
 
 | Color use | Possible meaning |
 | --- | --- |
@@ -245,17 +223,13 @@ Examples:
 | Red | WAN/uplink |
 | Green | Cameras |
 
-These meanings are local conventions. The cable color itself does not define the network role.
+Важно документировать свои conventions.
 
-### The Router Connects to the Internet
+### Router connects to the internet
 
-The switch, AP and server can create a working LAN.
+Switch, AP и server могут создать рабочую LAN, но LAN сама по себе не дает internet access.
 
-But a LAN alone does not automatically provide internet access.
-
-The router connects the local network to the outside world.
-
-Simple model:
+Router соединяет local network с outside world.
 
 ```text
 LAN -> router -> WAN/internet
@@ -263,46 +237,44 @@ LAN -> router -> WAN/internet
 
 ### WAN and ISP
 
-WAN means Wide Area Network.
+WAN означает Wide Area Network.
 
-In this lesson, the WAN is the internet connection.
+В этом уроке WAN - это internet connection.
 
-ISP means Internet Service Provider.
+ISP означает Internet Service Provider.
 
-Examples of ISP handoff/connection types:
+ISP может дать подключение через:
 
 - cable;
 - fiber;
 - DSL;
 - wireless handoff;
-- other provider circuits.
+- provider circuit.
 
-The ISP delivers connectivity into the building.
+### Router and security
 
-### Router and Security
+Router часто делает больше, чем просто routing.
 
-The router often does more than forward traffic.
-
-It may also handle:
+Он может выполнять:
 
 - firewall rules;
 - filtering;
-- allowed traffic;
-- blocked traffic;
+- allowed traffic decisions;
+- blocked traffic decisions;
 - NAT;
 - basic edge protection.
 
-The article does not go deep here yet. The important point is location:
+Главная точка:
 
 ```text
-The router/edge device is where the local network meets the outside world.
+Router/edge device - место, где local network встречает outside world.
 ```
 
-### Label Before Installation
+### Label before installation
 
-Labeling is a small habit with huge payoff.
+Labeling кажется мелочью, но очень помогает.
 
-Label:
+Маркируй:
 
 - cables;
 - switch ports;
@@ -312,37 +284,33 @@ Label:
 - power adapters;
 - uplinks.
 
-On site, especially under pressure, labels reduce dumb mistakes.
+На site labels уменьшают количество глупых ошибок.
 
 ### MDF
 
-MDF means Main Distribution Facility.
+MDF означает Main Distribution Facility.
 
-Plain-English meaning:
+Plain-English:
 
 ```text
-The central location where network gear lives.
+Центральное место, где находится network gear.
 ```
 
-In a real coffee shop, cable runs may go through walls and ceilings back to the MDF.
+В реальной кофейне кабели могут идти через walls и ceilings назад в MDF. Во время staging вся эта реальность сжимается до tabletop version.
 
-During staging, the same design is compressed onto a desk or workbench so you can test it before dealing with real physical distances.
+### Staging vs final install
 
-### Staging vs Final Install
-
-Staging is a tabletop version of the real install.
-
-It helps verify:
+Staging помогает проверить:
 
 - devices power on;
-- basic cabling works;
+- cabling works;
 - switches connect;
 - AP connects;
 - router path is understood;
 - labels make sense;
-- planned topology is practical.
+- topology is practical.
 
-Final installation adds real-world complexity:
+Final installation добавляет:
 
 - ceilings;
 - walls;
@@ -352,15 +320,15 @@ Final installation adds real-world complexity:
 - customer pressure;
 - business downtime.
 
-### Physical Picture
+### Physical picture
 
-The article's physical model:
+Модель из статьи:
 
 ```text
 Clients/servers/APs/cameras -> switch -> router -> internet
 ```
 
-Expanded:
+Расширенно:
 
 ```text
 Wireless clients -> AP -> switch
@@ -369,100 +337,100 @@ Server -> switch
 Switch -> router -> ISP/internet
 ```
 
-This picture gives deeper networking concepts somewhere to live.
+Эта картинка дает будущим темам место в голове.
 
 ## Commands / Terms
 
 | Term | Meaning |
 | --- | --- |
-| Staging | Building/testing equipment before installing it on site. |
-| Switch | Central LAN device that connects wired network devices. |
+| Staging | Предварительная сборка и проверка оборудования до установки на site. |
+| Switch | Центральное LAN-устройство для проводных network devices. |
 | LAN | Local Area Network. |
 | WAN | Wide Area Network. |
-| Router | Device that connects the local network to other networks, such as the internet. |
+| Router | Устройство, которое соединяет local network с другими сетями, например internet. |
 | ISP | Internet Service Provider. |
-| AP | Access Point; device that provides WiFi. |
-| Auto-MDIX | Feature that automatically handles transmit/receive cabling behavior. |
-| Server | Device/system that provides services to clients. |
-| Client | Device/application that consumes services. |
-| Redundancy | Backup/resilience if something fails. |
-| MDF | Main Distribution Facility; central network equipment location. |
-| Uplink | Connection between network devices, often switch-to-switch or switch-to-router. |
-| Firewall rules | Rules that allow or block traffic. |
+| AP | Access Point; устройство для Wi-Fi. |
+| Auto-MDIX | Функция, которая автоматически обрабатывает transmit/receive cabling behavior. |
+| Server | Устройство/система, которая предоставляет services. |
+| Client | Устройство/приложение, которое потребляет services. |
+| Redundancy | Backup/resilience при отказе. |
+| MDF | Main Distribution Facility; центральное место для network equipment. |
+| Uplink | Соединение между network devices, например switch-to-switch или switch-to-router. |
+| Firewall rules | Правила, которые allow или block traffic. |
 
 ## Questions
 
-### 1. What does staging network equipment mean?
+### 1. Что означает staging network equipment?
 
-It means setting up and testing the network gear before installing it on site.
+Это предварительная сборка и проверка сетевого оборудования до установки на реальной площадке.
 
-### 2. Why should you stage equipment before installation?
+### 2. Почему staging лучше делать до installation?
 
-Because it helps catch problems safely before they become expensive on-site issues.
+Так можно безопасно найти проблемы до того, как они станут дорогими on-site issues.
 
-### 3. What is usually the center of the local wired network?
+### 3. Что обычно является центром local wired network?
 
-The switch.
+Switch.
 
-### 4. What does a switch provide?
+### 4. Что предоставляет switch?
 
-It provides Ethernet ports and connects wired LAN devices together.
+Ethernet ports и связь между wired LAN devices.
 
-### 5. Why might you use more than one switch?
+### 5. Почему можно использовать больше одного switch?
 
-For flexibility, more ports, physical layout, future growth or redundancy.
+Для flexibility, большего числа портов, физической планировки, future growth или redundancy.
 
-### 6. What does redundancy mean?
+### 6. Что означает redundancy?
 
-Redundancy means backup or resilience if something fails.
+Backup или resilience при отказе.
 
-### 7. What does Auto-MDIX do?
+### 7. Что делает Auto-MDIX?
 
-It automatically adjusts transmit/receive behavior so modern devices can usually communicate over normal cables.
+Автоматически подстраивает transmit/receive behavior, чтобы современные devices могли общаться по обычным cables.
 
-### 8. What does a server do?
+### 8. Что делает server?
 
-A server provides services to other devices on the network.
+Server предоставляет services другим устройствам.
 
-### 9. What does a client do?
+### 9. Что делает client?
 
-A client consumes services from a server.
+Client потребляет services от server.
 
-### 10. What does a wireless access point do?
+### 10. Что делает wireless access point?
 
-It extends the wired network into the air so wireless devices can connect over WiFi.
+Расширяет wired network в Wi-Fi, чтобы wireless devices могли подключаться.
 
-### 11. Do Ethernet cable colors have inherent technical meaning?
+### 11. Имеют ли cable colors встроенный технический смысл?
 
-No. Cable colors are useful for organization, but the color itself does not change how the cable works.
+Нет. Цвета помогают организовать кабели, но сами по себе не меняют работу cable.
 
-### 12. What device connects the LAN to the internet?
+### 12. Какое устройство соединяет LAN с internet?
 
-The router.
+Router.
 
-### 13. What does ISP stand for?
+### 13. Что означает ISP?
 
 Internet Service Provider.
 
-### 14. What is the WAN in this lesson?
+### 14. Что такое WAN в этом уроке?
 
-The outside network/internet connection.
+Outside network / internet connection.
 
-### 15. What security-related functions may live near the router?
+### 15. Какие security-функции могут жить рядом с router?
 
-Firewall rules, filtering and decisions about what traffic is allowed or blocked.
+Firewall rules, filtering и решения о том, какой traffic разрешить или заблокировать.
 
-### 16. Why is labeling cables and ports important?
+### 16. Почему важно маркировать cables и ports?
 
-It reduces mistakes during installation and troubleshooting, especially under pressure.
+Это уменьшает ошибки при installation и troubleshooting.
 
-### 17. What does MDF stand for?
+### 17. Что означает MDF?
 
 Main Distribution Facility.
 
-### 18. What is the main physical picture from this lesson?
+### 18. Какая главная physical picture из урока?
 
-Devices connect to switches, access points extend the LAN over WiFi, and the router connects the local network to the internet.
+Devices подключаются к switches, AP расширяет LAN в Wi-Fi, router соединяет local network с internet.
 
 ## What To Review Later
 

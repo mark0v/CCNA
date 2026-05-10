@@ -7,97 +7,95 @@ Tags: lan, wan, network, switch, access point, wifi, network closet, local netwo
 
 ## Summary
 
-A network is any system that lets devices communicate with each other. LAN and WAN are two basic ways to describe the scope of that communication: LAN is the local network inside a contained place like a coffee shop, office or home; WAN is the wider network used to reach outside that local space, usually the internet or another remote location.
+Network - это способ, с помощью которого устройства могут общаться друг с другом. LAN и WAN описывают масштаб этой связи: LAN работает внутри ограниченного места, например дома, офиса или кофейни, а WAN нужен, когда трафик выходит за пределы локальной сети, чаще всего в интернет или к удаленной площадке.
 
-Main idea: LAN is inside, WAN is outside. The LAN is built around local infrastructure such as switches, cabling and access points. The WAN is the path that lets the local network reach the rest of the world.
+Главная мысль: LAN - это "внутри", WAN - это "наружу". LAN держится на локальной инфраструктуре: switches, cabling, access points и network closet. WAN дает путь во внешний мир.
 
 ## Key Points
 
-- A network lets devices communicate and share data.
-- Local data means data stored on and accessed from one device.
-- Connecting two devices together creates a network, even if it is tiny.
-- In IT, network is a generic term for connected things that can communicate.
-- A coffee shop network includes more than visible WiFi.
-- Wireless clients usually depend on a wired network behind the scenes.
-- The network closet is the hidden room where key infrastructure lives.
-- A switch connects wired devices in the local network.
-- A wireless access point provides WiFi, but usually connects back to a switch.
-- LAN means Local Area Network.
-- A LAN covers a limited local area, such as one shop, building, office suite or home.
-- LAN traffic stays inside that local environment.
-- WAN means Wide Area Network.
-- A WAN connects across larger distances.
-- In everyday conversation, WAN often means the internet connection.
-- WAN can also connect one business location to another.
-- Troubleshooting starts by asking whether the problem is inside the building or outside the building.
+- Network позволяет устройствам обмениваться данными.
+- Local data - это данные, которые хранятся и доступны на конкретном устройстве.
+- Даже два соединенных компьютера уже образуют network.
+- В IT слово network означает систему связанных устройств, которые могут общаться.
+- В кофейне сеть - это не только видимый Wi-Fi.
+- Wireless-клиенты почти всегда опираются на проводную инфраструктуру.
+- Network closet - скрытая комната, где живет ключевое сетевое оборудование.
+- Switch соединяет проводные устройства внутри LAN.
+- Wireless access point дает Wi-Fi, но обычно сам подключается к switch.
+- LAN означает Local Area Network.
+- LAN ограничена локальным пространством: дом, офис, магазин, здание.
+- LAN traffic остается внутри локальной среды.
+- WAN означает Wide Area Network.
+- WAN соединяет сети на больших расстояниях.
+- В обычной речи WAN часто означает интернет-подключение.
+- WAN также может соединять одну бизнес-площадку с другой.
+- При troubleshooting сначала полезно понять: проблема внутри здания или при выходе наружу.
 
 ## Notes
 
-### What Is a Network?
+### Что такое network?
 
-A network is a way for devices to communicate with each other.
+Network - это способ связи между устройствами.
 
-That communication can happen through:
+Связь может идти через:
 
 - copper cable;
 - fiber;
-- WiFi;
-- other connection methods.
+- Wi-Fi;
+- другой метод подключения.
 
-The simplest possible idea:
-
-```text
-Device A can talk to Device B.
-That is a network.
-```
-
-The network may be small, ugly or not scalable, but if devices can communicate, the core idea is there.
-
-### Local Data
-
-Local means something is on that device and accessible from that device.
-
-Examples:
-
-- local files;
-- local folders;
-- local apps;
-- local stored data.
-
-Before devices are connected, each device is its own little island. After they are connected, they can share data and communicate.
-
-### Network as a Generic Word
-
-Network is not only an IT word.
-
-Examples:
-
-- network of roads;
-- network of people;
-- network of coffee shops;
-- computer network.
-
-The shared idea is:
+Самая простая модель:
 
 ```text
-Connected things that can interact or communicate.
+Device A может поговорить с Device B.
+Это уже network.
 ```
 
-In IT, those connected things are usually devices and services.
+Сеть может быть маленькой, некрасивой и плохо масштабируемой, но если устройства могут обмениваться данными, базовая идея уже работает.
 
-### NetworkChuck Coffee Example
+### Local data
 
-Customers see the polished side of the coffee shop:
+Local означает, что данные находятся на конкретном устройстве и доступны с него.
 
-- WiFi;
-- registers;
+Примеры:
+
+- локальные файлы;
+- локальные папки;
+- локальные приложения;
+- данные на самом устройстве.
+
+Пока устройства не соединены, каждое живет как отдельный остров. После подключения они могут обмениваться данными.
+
+### Network как общее понятие
+
+Network - не только IT-слово.
+
+Можно говорить о:
+
+- сети дорог;
+- сети людей;
+- сети кофеен;
+- компьютерной сети.
+
+Общая идея:
+
+```text
+Связанные элементы, которые могут взаимодействовать.
+```
+
+В IT этими элементами обычно являются devices и services.
+
+### Пример NetworkChuck Coffee
+
+Клиент видит приятную сторону кофейни:
+
+- Wi-Fi;
+- кассу;
 - tablets;
-- seating area;
-- streaming devices.
+- гостевую зону;
+- медиа-устройства.
 
-What they do not see is the network infrastructure behind the wall.
-
-The coffee shop may have:
+Но за этим стоит физическая инфраструктура:
 
 - network closet;
 - switches;
@@ -106,28 +104,28 @@ The coffee shop may have:
 - wireless access points;
 - router/firewall;
 - WAN connection;
-- power and UPS equipment.
+- power/UPS.
 
-The visible wireless experience depends on physical infrastructure.
+Видимый wireless-опыт зависит от очень физической сети за стеной.
 
-### Wireless Still Needs Wires
+### Wireless тоже нуждается в проводах
 
-Wireless does not mean the whole network has no wires.
+Wireless не означает, что во всей сети нет проводов.
 
-It usually means:
+Обычно это значит:
 
 ```text
-The client device does not need a cable.
-The access point still connects back to the wired network.
+Клиентскому устройству не нужен кабель.
+Но access point все равно подключен к wired network.
 ```
 
-This is a critical mental model. WiFi is usually an extension of the wired LAN, not a replacement for the entire LAN.
+Wi-Fi чаще всего является расширением проводной LAN, а не полной заменой LAN.
 
-### The Network Closet
+### Network closet
 
-The network closet is the hidden room where important network infrastructure lives.
+Network closet - это место, где находится основная сетевая инфраструктура.
 
-It may connect:
+Туда могут сходиться:
 
 - register/POS devices;
 - office computers;
@@ -138,159 +136,147 @@ It may connect:
 - smart TVs or media devices;
 - internet/WAN equipment.
 
-For customers, the network closet is invisible. For the business, it is the heart of connectivity.
+Для посетителя это невидимо, но для бизнеса это сердце connectivity.
 
-### Why We Use a Switch
+### Зачем нужен switch
 
-Connecting every device directly to every other device does not scale.
+Подключать каждое устройство напрямую к каждому другому устройству невозможно и неудобно.
 
-Bad model:
+Плохая модель:
 
 ```text
 Computer A -> Computer B -> Computer C -> Computer D
 ```
 
-If something in the middle fails, devices downstream may lose connectivity.
+Если что-то ломается посередине, часть сети может отвалиться.
 
-Better model:
+Нормальная модель:
 
 ```text
 Devices -> Switch
 ```
 
-A switch is the central device where wired LAN devices connect.
+Switch становится центральной точкой для проводных устройств LAN и помогает им общаться.
 
-The switch lets devices communicate without needing messy direct connections between every pair of devices.
+### Wireless access point
 
-### Wireless Access Point
-
-A wireless access point is often shortened to:
+Wireless access point часто сокращают до:
 
 ```text
 AP
 ```
 
-An AP provides WiFi so wireless devices can connect, such as:
+AP создает Wi-Fi для:
 
 - phones;
 - laptops;
 - tablets;
 - handheld devices.
 
-But the AP usually plugs into the switch.
+Но сам AP обычно подключается к switch.
 
-Simple model:
+Простая модель:
 
 ```text
-Phone -> WiFi -> Access Point -> Switch -> LAN/WAN
+Phone -> Wi-Fi -> Access Point -> Switch -> LAN/WAN
 ```
 
 ### LAN
 
-LAN means Local Area Network.
+LAN означает Local Area Network.
 
-A LAN is a network inside a limited local area.
+Это сеть внутри ограниченной локальной области:
 
-Examples:
+- одна кофейня;
+- дом;
+- офис;
+- офисный suite;
+- здание;
+- локальная бизнес-площадка.
 
-- one coffee shop;
-- one home;
-- one office;
-- one office suite;
-- one building;
-- one local business location.
-
-At NetworkChuck Coffee, LAN devices might include:
+В NetworkChuck Coffee к LAN могут относиться:
 
 - register/POS system;
 - back office PC;
 - smart TV;
 - printer;
-- WiFi clients;
+- Wi-Fi clients;
 - cameras;
 - local server;
 - access points;
 - switches.
 
-### LAN Traffic
+### LAN traffic
 
-LAN traffic stays inside the local environment.
+LAN traffic остается внутри локальной среды.
 
-Examples:
+Примеры:
 
-- POS terminal talks to a local device in the shop;
-- laptop prints to a printer in the same office;
-- customer streams from a local media server in the building;
-- office PC accesses a local shared folder;
-- phone talks to an internal server.
+- POS terminal говорит с локальным устройством в магазине;
+- laptop печатает на printer в офисе;
+- клиент смотрит видео с local media server;
+- office PC открывает локальную shared folder;
+- phone обращается к internal server.
 
-LAN does not mean tiny. A LAN can include many switches, access points, printers, cameras and clients.
-
-The important part is the scope:
-
-```text
-Local and contained.
-```
+LAN не обязана быть маленькой. В ней могут быть many switches, APs, printers, cameras и clients. Главное - это локальность.
 
 ### WAN
 
-WAN means Wide Area Network.
+WAN означает Wide Area Network.
 
-A WAN connects across large distances or beyond the local environment.
+WAN выходит за пределы локальной среды и соединяет большие расстояния.
 
-In everyday use, WAN often means:
-
-```text
-The internet connection.
-```
-
-But technically, a WAN can also connect:
-
-- one branch to another branch;
-- a coffee shop to headquarters;
-- a local office to a data center;
-- locations across town;
-- locations across the country.
-
-### WAN Traffic
-
-WAN traffic leaves the local environment.
-
-Examples:
-
-- register reaches a cloud payment processor;
-- laptop opens Netflix;
-- manager checks inventory from another city;
-- branch office connects to headquarters;
-- local network reaches cloud apps.
-
-Simple model:
+В обычной речи WAN часто означает:
 
 ```text
-LAN -> WAN -> outside network/internet/remote site
+Internet connection
 ```
 
-### LAN vs WAN Troubleshooting
+Но технически WAN может соединять:
 
-Good troubleshooting starts with scope.
+- branch с branch;
+- coffee shop с headquarters;
+- office с data center;
+- площадки в разных городах;
+- площадки в разных странах.
 
-Ask:
+### WAN traffic
+
+WAN traffic покидает локальную сеть.
+
+Примеры:
+
+- register обращается к cloud payment processor;
+- laptop открывает Netflix;
+- manager проверяет inventory из другого города;
+- branch office подключается к headquarters;
+- локальная сеть обращается к cloud apps.
+
+Модель:
 
 ```text
-Is the problem inside the building,
-or does it happen only when traffic leaves the building?
+LAN -> WAN -> internet/remote site
 ```
 
-If the problem stays local, think LAN:
+### Troubleshooting LAN vs WAN
+
+Хороший troubleshooting начинается с вопроса о масштабе:
+
+```text
+Проблема внутри здания
+или только когда трафик выходит наружу?
+```
+
+Если проблема локальная, думай про LAN:
 
 - switch;
 - cabling;
-- WiFi;
+- Wi-Fi;
 - access point;
 - local addressing;
 - local device issue.
 
-If the problem happens when leaving the local network, think WAN:
+Если проблема возникает при выходе наружу, думай про WAN:
 
 - internet circuit;
 - ISP issue;
@@ -299,128 +285,116 @@ If the problem happens when leaving the local network, think WAN:
 - remote service;
 - routing outside the site.
 
-### Mental Model
-
-The core distinction:
+### Mental model
 
 | Type | Scope | Example |
 | --- | --- | --- |
-| LAN | Inside local space | Coffee shop devices talking internally |
-| WAN | Outside local space | Coffee shop reaching internet or remote site |
+| LAN | Внутри локального места | Устройства кофейни общаются между собой |
+| WAN | За пределы локального места | Кофейня выходит в интернет или к remote site |
 
-Short version:
+Короткая версия:
 
 ```text
 LAN is inside.
 WAN is outside.
 ```
 
-### Main Takeaway
-
-A network lets devices communicate.
-
-Inside the local location, that communication is the LAN.
-
-When communication leaves that local space, it uses the WAN.
-
-Behind the scenes, the LAN usually depends on switches, cabling and access points, while the WAN provides the path to the internet or remote locations.
-
 ## Commands / Terms
 
 | Term | Meaning |
 | --- | --- |
-| Network | Connected devices that can communicate. |
-| Local | Stored on or accessible from the current device/location. |
-| LAN | Local Area Network; a network inside a limited local area. |
-| WAN | Wide Area Network; a network spanning wider distance or outside the local site. |
-| Switch | Central wired device that connects LAN devices. |
-| AP | Access Point; device that provides WiFi and usually connects back to the wired LAN. |
-| WiFi | Wireless access method for client devices. |
-| Network closet | Room or area where network infrastructure is installed. |
-| LAN traffic | Traffic that stays inside the local network. |
-| WAN traffic | Traffic that leaves the local network for internet or remote locations. |
+| Network | Связанные устройства, которые могут обмениваться данными. |
+| Local | Находится на текущем устройстве или внутри локальной среды. |
+| LAN | Local Area Network; сеть внутри ограниченной локальной области. |
+| WAN | Wide Area Network; сеть для связи за пределами локальной площадки. |
+| Switch | Устройство, которое соединяет проводные LAN devices. |
+| AP | Access Point; устройство, которое дает Wi-Fi и обычно подключается к wired LAN. |
+| Wi-Fi | Беспроводной способ доступа клиентских устройств к сети. |
+| Network closet | Комната/место, где установлена сетевая инфраструктура. |
+| LAN traffic | Трафик, который остается внутри local network. |
+| WAN traffic | Трафик, который выходит к internet или remote locations. |
 | ISP | Internet Service Provider. |
 
 ## Questions
 
-### 1. What is a network?
+### 1. Что такое network?
 
-A network is a way for devices to communicate with each other.
+Network - это способ, с помощью которого устройства могут общаться друг с другом.
 
-### 2. What does local mean in this lesson?
+### 2. Что означает local в этом уроке?
 
-Local means data or resources are stored on and accessible from that device or local environment.
+Local означает, что данные или ресурсы находятся на текущем устройстве или внутри локальной среды.
 
-### 3. What happens when two standalone computers are connected together?
+### 3. Что происходит, когда два отдельных компьютера соединяют между собой?
 
-They form a network because they can now communicate and share data.
+Они образуют network, потому что теперь могут обмениваться данными.
 
-### 4. Why does a coffee shop need a network closet?
+### 4. Зачем кофейне network closet?
 
-Because the hidden infrastructure for WiFi, registers, cameras, office devices and WAN connectivity usually lives there.
+Там находится инфраструктура для Wi-Fi, касс, камер, office devices и WAN connectivity.
 
-### 5. Why is wireless not truly wire-free from a design perspective?
+### 5. Почему wireless не означает полностью "без проводов"?
 
-Because wireless clients usually connect through an access point that plugs back into the wired network.
+Потому что wireless clients обычно подключаются через AP, который сам подключен к wired network.
 
-### 6. What does a switch do?
+### 6. Что делает switch?
 
-A switch connects wired devices in the local network and helps them communicate.
+Switch соединяет проводные устройства внутри local network.
 
-### 7. What does AP stand for?
+### 7. Что означает AP?
 
-AP stands for Access Point.
+AP означает Access Point.
 
-### 8. What does an access point do?
+### 8. Что делает access point?
 
-It provides WiFi so wireless devices can connect to the network.
+Он дает Wi-Fi, чтобы wireless devices могли подключаться к сети.
 
-### 9. What does LAN stand for?
+### 9. Что означает LAN?
 
-LAN stands for Local Area Network.
+LAN означает Local Area Network.
 
-### 10. What is a LAN?
+### 10. Что такое LAN?
 
-A LAN is a network inside a limited local area, such as a home, office, shop or building.
+LAN - это сеть внутри ограниченной области: дома, офиса, магазина или здания.
 
-### 11. What does WAN stand for?
+### 11. Что означает WAN?
 
-WAN stands for Wide Area Network.
+WAN означает Wide Area Network.
 
-### 12. What is a WAN?
+### 12. Что такое WAN?
 
-A WAN connects networks across larger distances or outside the local environment.
+WAN соединяет сети на больших расстояниях или за пределами локальной среды.
 
-### 13. In everyday conversation, what does WAN often mean?
+### 13. Что WAN часто означает в обычной речи?
 
-It often means the internet connection.
+Обычно internet connection.
 
-### 14. Can WAN mean something other than internet?
+### 14. Может ли WAN быть не интернетом?
 
-Yes. A WAN can connect one business location to another remote location.
+Да. WAN может соединять одну бизнес-площадку с другой удаленной площадкой.
 
-### 15. What is the simple LAN vs WAN mental model?
+### 15. Какой простой mental model для LAN vs WAN?
 
-LAN is inside; WAN is outside.
+LAN - inside, WAN - outside.
 
-### 16. What question should you ask first when troubleshooting?
+### 16. Какой вопрос стоит задать первым при troubleshooting?
 
-Ask whether the problem stays inside the building or only happens when traffic leaves the building.
+Проблема остается внутри здания или появляется только при выходе наружу?
 
-### 17. If a printer inside the shop cannot be reached, is that more likely LAN or WAN?
+### 17. Если printer внутри магазина недоступен, это скорее LAN или WAN?
 
-LAN, because the communication is local.
+LAN, потому что связь локальная.
 
-### 18. If the register cannot reach a cloud payment processor, is that more likely LAN or WAN?
+### 18. Если register не может достучаться до cloud payment processor, это скорее LAN или WAN?
 
-WAN or internet-path related, because the communication leaves the local network.
+WAN или internet-path issue, потому что трафик выходит наружу.
 
 ## What To Review Later
 
-- Network means connected devices that can communicate.
+- Network = connected devices that can communicate.
 - Wireless usually rides on wired infrastructure.
 - Switch role in the LAN.
-- AP role for WiFi.
+- AP role for Wi-Fi.
 - LAN = local/inside.
 - WAN = wide/outside.
 - Internet as common WAN example.

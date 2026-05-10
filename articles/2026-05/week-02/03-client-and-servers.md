@@ -7,35 +7,35 @@ Tags: client, server, endpoint, switch, access point, network communication, ple
 
 ## Summary
 
-The network is not the main character. It is the infrastructure that lets devices communicate so the business can actually function. At NetworkChuck Coffee, the network exists so phones, laptops, cameras, access points and servers can exchange data reliably.
+Network - не главный герой. Это инфраструктура, которая позволяет устройствам и сервисам общаться, чтобы бизнес реально работал. В NetworkChuck Coffee сеть нужна не ради switch closet, а ради phones, laptops, cameras, servers и services, которые поддерживают работу кофейни.
 
-Main idea: many network conversations follow the client/server model. A client asks for something, a server provides it, and both are endpoints using the network as the path between them.
+Главная мысль: огромное количество сетевых взаимодействий укладывается в client/server model. Client просит, server предоставляет, а network переносит этот разговор между endpoints.
 
 ## Key Points
 
-- The network is infrastructure, not the reason the business exists.
-- The goal of networking is communication between devices and services.
-- Client/server is a core relationship behind many network interactions.
-- A client is the device or application asking for something.
-- A server is the device or application providing something.
-- One device makes a request, another device responds.
-- A phone streaming from a local media server is a client.
-- A Plex/media box serving the movie is a server.
-- A camera can also act as a client if it sends video to a storage/video server.
-- Clients are not only laptops and phones.
-- Servers are not only giant data center machines.
-- Endpoint is a broad term for devices that sit at the edge of the network and communicate across it.
-- Both clients and servers are endpoints.
-- Switches, cabling and access points are infrastructure that support endpoint communication.
-- Troubleshooting should start by identifying the client, the server and the path between them.
+- Network - это infrastructure, а не цель бизнеса.
+- Цель networking - communication между devices и services.
+- Client/server - базовая модель многих сетевых взаимодействий.
+- Client - устройство или приложение, которое запрашивает что-то.
+- Server - устройство или приложение, которое предоставляет что-то.
+- Один участник делает request, другой отвечает.
+- Phone, который смотрит видео с local media server, является client.
+- Plex/media box, который отдает фильм, является server.
+- Camera может быть client, если отправляет video на storage/video server.
+- Clients - это не только laptops и phones.
+- Servers - это не только огромные data center machines.
+- Endpoint - широкий термин для устройств на краю сети, которые общаются через нее.
+- Clients и servers оба являются endpoints.
+- Switches, cabling и access points - infrastructure, которая поддерживает communication.
+- Troubleshooting полезно начинать с вопроса: кто client, какой server он пытается достичь и какой path между ними.
 
 ## Notes
 
-### The Network Is Not the Goal
+### Network is not the goal
 
-Network engineers care about switches, cables, ports and blinking lights, but the business does not exist for those things.
+Network engineers любят switches, cables, ports и blinking lights, но бизнес существует не ради них.
 
-The network exists to support business needs:
+Network поддерживает business needs:
 
 - streaming media;
 - storing surveillance footage;
@@ -44,108 +44,106 @@ The network exists to support business needs:
 - connecting devices;
 - keeping services available.
 
-At NetworkChuck Coffee, a switch closet matters because it lets real devices do real work.
+В NetworkChuck Coffee switch closet важен потому, что он позволяет real devices делать real work.
 
-### Network as Infrastructure
+### Network as infrastructure
 
-The network is like a road.
+Network похожа на дорогу.
 
-It is not the destination. It is the path that lets communication happen.
+Она не destination. Она path, по которому идет communication.
 
-Simple model:
+Модель:
 
 ```text
 Device/service needs to talk -> network carries the conversation
 ```
 
-If you only look at the infrastructure, you can miss the purpose of the traffic.
+Если смотреть только на infrastructure, можно пропустить смысл traffic.
 
-### Building the Inside Picture
+### Inside the coffee shop
 
-Inside the coffee shop:
+Внутри кофейни:
 
-- a switch lives in the network closet;
-- cables run from the switch to devices;
-- a wireless access point connects to the switch;
-- phones, tablets and laptops join through WiFi;
-- servers or storage systems may connect by cable;
-- cameras may send video over the network.
+- switch живет в network closet;
+- cables идут от switch к устройствам;
+- wireless access point подключается к switch;
+- phones, tablets и laptops подключаются через Wi-Fi;
+- servers или storage systems могут подключаться кабелем;
+- cameras могут отправлять video по сети.
 
-The topology matters, but the communication relationships matter even more.
+Topology важна, но relationships между устройствами важны еще сильнее.
 
-### Access Point and Switch Path
+### Access point and switch path
 
-A wireless device is still using the wired network behind the scenes.
+Wireless device все равно использует wired network за кулисами.
 
-Example path:
+Пример path:
 
 ```text
-Phone -> WiFi -> access point -> switch -> server
+Phone -> Wi-Fi -> access point -> switch -> server
 ```
 
-The phone may feel wireless, but its traffic usually flows through wired infrastructure after it reaches the access point.
+Phone кажется wireless, но после AP traffic обычно идет через wired infrastructure.
 
-### Client/Server Pattern
+### Client/server pattern
 
-The client/server relationship is one of the most important patterns in networking.
+Client/server relationship - один из самых важных patterns в networking.
 
-Core idea:
+Главная идея:
 
 ```text
 Client asks.
 Server provides.
 ```
 
-Or:
+Или:
 
 ```text
 Client -> request -> server
 Server -> response/data -> client
 ```
 
-Once you see this pattern, network traffic becomes easier to reason about.
+Когда видишь этот pattern, network traffic становится проще понимать.
 
-### What Is a Client?
+### What is a client?
 
-A client is the device or application asking for something.
+Client - это device или application, которое просит что-то или начинает communication.
 
-Examples:
+Примеры:
 
-- phone requesting a video;
-- laptop opening a web page;
-- tablet connecting to an internal app;
-- camera sending footage to storage;
-- POS terminal reaching a server;
-- printer client requesting a print service.
+- phone запрашивает video;
+- laptop открывает web page;
+- tablet подключается к internal app;
+- camera отправляет footage на storage;
+- POS terminal обращается к server;
+- приложение просит print service.
 
-The client starts or initiates the interaction.
+Client запускает interaction.
 
-### What Is a Server?
+### What is a server?
 
-A server is the device or application providing something.
+Server - это device или application, которое предоставляет service.
 
-Examples:
+Примеры:
 
-- media server providing a movie;
-- file server providing files;
-- web server providing a website;
-- database server providing data;
-- video server receiving/storing footage;
-- authentication server validating logins.
+- media server отдает movie;
+- file server отдает files;
+- web server отдает website;
+- database server отдает data;
+- video server принимает/хранит footage;
+- authentication server проверяет logins.
 
-The server responds to requests or receives data for a service.
+Server отвечает на requests или принимает данные для service.
 
-### Media Streaming Example
+### Media streaming example
 
-At NetworkChuck Coffee, imagine a phone wants to watch a movie stored locally.
-
-Roles:
+В NetworkChuck Coffee phone хочет посмотреть movie с локального media server.
 
 | Device | Role | Why |
 | --- | --- | --- |
-| Phone | Client | It requests the movie |
-| Plex/media box | Server | It stores and sends the movie |
-| AP/switch | Infrastructure | They carry the traffic |
+| Phone | Client | Запрашивает movie |
+| Plex/media box | Server | Хранит и отправляет movie |
+| AP/switch | Infrastructure | Переносит traffic |
 
 Traffic path:
 
@@ -154,47 +152,45 @@ Phone -> AP -> switch -> media server
 Media server -> switch -> AP -> phone
 ```
 
-This makes the traffic less abstract. It is not just "packets"; it is a request and a response.
+Это уже не абстрактные packets, а request и response.
 
-### Not Every Client Looks Like a Laptop
+### Not every client looks like a laptop
 
-Clients are not only user devices.
+Clients - не только user devices.
 
-A client is any device/application that initiates a request or sends data to another system.
+Client - это любое device/application, которое инициирует request или отправляет data другой системе.
 
-That means a security camera can be a client.
+Значит, security camera тоже может быть client.
 
-Why?
+Почему?
 
 ```text
 Camera sends video to a video/storage server.
 ```
 
-The camera is the device initiating/sending the data in that relationship.
+В этой relationship camera инициирует отправку data.
 
-### Surveillance Example
+### Surveillance example
 
-At NetworkChuck Coffee, cameras may send footage to a video server.
-
-Roles:
+В NetworkChuck Coffee cameras могут отправлять footage на video server.
 
 | Device | Role | Why |
 | --- | --- | --- |
-| Camera | Client | Captures and sends video |
-| Video/storage server | Server | Receives and stores footage |
-| Switch/cabling | Infrastructure | Carries the video traffic |
+| Camera | Client | Захватывает и отправляет video |
+| Video/storage server | Server | Принимает и хранит footage |
+| Switch/cabling | Infrastructure | Переносит video traffic |
 
-Different use case, same client/server pattern.
+Другой use case, тот же client/server pattern.
 
-### Troubleshooting Mindset
+### Troubleshooting mindset
 
-Instead of starting with:
+Не начинай с:
 
 ```text
 Is the network broken?
 ```
 
-Start with:
+Начинай с:
 
 ```text
 Who is the client?
@@ -202,23 +198,23 @@ What server is it trying to reach?
 What path should traffic take?
 ```
 
-This narrows the problem quickly.
+Это быстро сужает проблему.
 
-Useful troubleshooting questions:
+Полезные вопросы:
 
-- Which device is asking?
-- Which service is being requested?
-- Which server should respond?
-- Can the client reach the network?
-- Can the server reach the network?
-- Is the path between them working?
-- Is the issue with the endpoint, infrastructure or service?
+- какое устройство просит?
+- какой service нужен?
+- какой server должен ответить?
+- client подключен к network?
+- server подключен к network?
+- path между ними работает?
+- проблема в endpoint, infrastructure или service?
 
 ### Endpoint
 
-Endpoint is a broad term for devices at the edge of the network that communicate across it.
+Endpoint - широкий термин для устройств на краю сети, которые общаются через нее.
 
-Endpoints can include:
+Endpoints:
 
 - phones;
 - laptops;
@@ -230,17 +226,17 @@ Endpoints can include:
 - smart TVs;
 - storage systems.
 
-Important:
+Важно:
 
 ```text
 Both clients and servers are endpoints.
 ```
 
-Endpoint does not only mean a user device.
+Endpoint - это не только user device.
 
-### Infrastructure vs Endpoints
+### Infrastructure vs endpoints
 
-Network infrastructure includes:
+Network infrastructure:
 
 - switches;
 - cabling;
@@ -249,9 +245,7 @@ Network infrastructure includes:
 - firewalls;
 - patch panels.
 
-Endpoints use that infrastructure.
-
-Examples:
+Endpoints используют эту infrastructure.
 
 | Infrastructure | Endpoint |
 | --- | --- |
@@ -260,15 +254,15 @@ Examples:
 | Cabling | Camera |
 | Router | Server |
 
-Network engineers care for the infrastructure so endpoints can work.
+Network engineers заботятся об infrastructure, чтобы endpoints работали.
 
-### Communication Platform
+### Communication platform
 
-The network is a communication platform.
+Network - это communication platform.
 
-Inside the coffee shop, we do not just have connected gadgets.
+В кофейне есть не просто connected gadgets.
 
-We have:
+Есть:
 
 - clients making requests;
 - servers providing services;
@@ -276,11 +270,11 @@ We have:
 - traffic moving through switches and APs;
 - business functions depending on reliable communication.
 
-This is what gives a network diagram purpose.
+Это делает network diagram осмысленной.
 
-### Main Takeaway
+### Main takeaway
 
-When looking at traffic, ask:
+Когда смотришь на traffic, спрашивай:
 
 ```text
 Who is asking?
@@ -288,89 +282,89 @@ Who is providing?
 What infrastructure carries the conversation?
 ```
 
-Client/server explains the relationship.
+Client/server объясняет relationship.
 
-The network carries the conversation.
+Network переносит conversation.
 
-Endpoints are the devices and systems participating in it.
+Endpoints участвуют в нем.
 
 ## Commands / Terms
 
 | Term | Meaning |
 | --- | --- |
-| Client | Device or application that asks for something or initiates communication. |
-| Server | Device or application that provides a service or responds to requests. |
-| Endpoint | Device/system at the edge of the network that communicates across it. |
-| Infrastructure | Network components that carry traffic, such as switches, cabling and APs. |
-| Switch | Device that connects wired LAN devices. |
-| Access point | Device that extends the wired network into WiFi. |
-| Service | Function provided by a server, such as files, media, web, storage or authentication. |
-| Request | Message from a client asking for something. |
-| Response | Data or answer sent back by a server. |
-| Plex/media server | Example of a server that stores and streams media. |
-| Video server | System that receives and stores surveillance footage. |
+| Client | Device или application, которое запрашивает что-то или начинает communication. |
+| Server | Device или application, которое предоставляет service или отвечает на requests. |
+| Endpoint | Device/system на краю сети, который общается через нее. |
+| Infrastructure | Network components, которые переносят traffic: switches, cabling, APs. |
+| Switch | Устройство, которое соединяет wired LAN devices. |
+| Access point | Устройство, которое расширяет wired network в Wi-Fi. |
+| Service | Функция, которую предоставляет server: files, media, web, storage, authentication. |
+| Request | Сообщение от client с просьбой что-то получить/сделать. |
+| Response | Data или answer, отправленные server обратно. |
+| Plex/media server | Пример server, который хранит и streams media. |
+| Video server | Система, которая принимает и хранит surveillance footage. |
 
 ## Questions
 
-### 1. Why is the network not the main character?
+### 1. Почему network не главный герой?
 
-Because the network is infrastructure. Its purpose is to let devices and services communicate so the business can function.
+Потому что network - это infrastructure. Ее цель - дать devices и services общаться, чтобы бизнес работал.
 
-### 2. What is the client/server model?
+### 2. Что такое client/server model?
 
-It is a relationship where one device or application asks for something and another provides it.
+Это relationship, где один участник просит что-то, а другой предоставляет.
 
-### 3. What is a client?
+### 3. Что такое client?
 
-A client is the device or application making a request or initiating communication.
+Client - это device или application, которое делает request или инициирует communication.
 
-### 4. What is a server?
+### 4. Что такое server?
 
-A server is the device or application providing a service or responding to requests.
+Server - это device или application, которое предоставляет service или отвечает на requests.
 
-### 5. In the media streaming example, what is the client?
+### 5. В media streaming example кто client?
 
-The phone is the client because it requests the movie.
+Phone, потому что он запрашивает movie.
 
-### 6. In the media streaming example, what is the server?
+### 6. В media streaming example кто server?
 
-The Plex/media box is the server because it stores and sends the movie.
+Plex/media box, потому что он хранит и отправляет movie.
 
-### 7. Can a camera be a client?
+### 7. Может ли camera быть client?
 
-Yes. If it sends video to a video/storage server, it is acting as the client in that relationship.
+Да. Если она отправляет video на video/storage server, она действует как client.
 
-### 8. What is the server in the camera example?
+### 8. Кто server в camera example?
 
-The video/storage server that receives and stores the footage.
+Video/storage server, который принимает и хранит footage.
 
-### 9. What is an endpoint?
+### 9. Что такое endpoint?
 
-An endpoint is a device or system at the edge of the network that communicates across it.
+Endpoint - это device или system на краю сети, который общается через сеть.
 
-### 10. Are servers endpoints?
+### 10. Servers являются endpoints?
 
-Yes. Both clients and servers can be endpoints.
+Да. Clients и servers оба могут быть endpoints.
 
-### 11. What devices can be endpoints?
+### 11. Какие devices могут быть endpoints?
 
-Phones, laptops, printers, cameras, servers, POS terminals, tablets and other devices using the network.
+Phones, laptops, printers, cameras, servers, POS terminals, tablets и другие network devices.
 
-### 12. What is the role of the switch and access point in client/server communication?
+### 12. Какую роль играют switch и access point в client/server communication?
 
-They are infrastructure that carry the traffic between endpoints.
+Они являются infrastructure, которая переносит traffic между endpoints.
 
-### 13. What troubleshooting question should you ask first?
+### 13. С какого troubleshooting-вопроса стоит начать?
 
-Who is the client, and what server is it trying to reach?
+Кто client и какой server он пытается достичь?
 
-### 14. Why does identifying client and server help troubleshooting?
+### 14. Почему client/server помогает troubleshooting?
 
-It narrows the problem by showing who is requesting, who should respond and what path traffic should take.
+Он показывает, кто просит, кто должен ответить и какой path должен пройти traffic.
 
-### 15. What does the network carry in this model?
+### 15. Что переносит network в этой модели?
 
-The network carries the conversation between clients and servers.
+Conversation между clients и servers.
 
 ## What To Review Later
 
