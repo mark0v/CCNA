@@ -7,34 +7,31 @@ Tags: switch, wireless, access point, lan, wifi, ethernet, antennas, coverage, d
 
 ## Summary
 
-The LAN of NetworkChuck Coffee is built mainly on two device types: switches and wireless access points. Switches provide the wired foundation for local devices, while access points extend that same LAN into the air for phones, laptops, tablets and guest devices.
+LAN в NetworkChuck Coffee держится в основном на двух устройствах: `switch` и `wireless access point`. Switch соединяет проводные устройства внутри локальной сети, а access point расширяет эту же сеть в WiFi для телефонов, ноутбуков, планшетов и гостевых устройств.
 
-Main idea: WiFi is not magic and not separate from the wired network. Wireless access points usually plug back into switches, so the visible wireless experience depends on the wired LAN underneath.
+Главная мысль: WiFi не живет отдельно от проводной сети. Обычно AP подключен кабелем обратно в switch, поэтому качество беспроводной сети зависит от проводной инфраструктуры под ней.
 
 ## Key Points
 
-- The LAN inside NetworkChuck Coffee depends heavily on switches and wireless access points.
-- A switch connects wired devices together on the LAN.
-- Switch ports are also called interfaces.
-- Business networks should use proper switches in a network closet instead of random unmanaged desk switches.
-- Small unmanaged desk switches create extra failure points and troubleshooting confusion.
-- Common business switches often have 24 or 48 ports.
-- Standard Ethernet cable runs are limited to about 328 feet / 100 meters.
-- A wireless access point extends the wired LAN into WiFi.
-- An AP usually plugs back into the switch.
-- Wireless clients join the LAN through the AP.
-- WiFi convenience depends on wired infrastructure.
-- Antennas shape wireless coverage.
-- Omnidirectional antennas spread signal broadly around the AP.
-- Directional antennas focus signal in a tighter direction.
-- Directional wireless can sometimes connect buildings when running cable is impractical.
-- Switches are the foundation; APs are the wireless extension.
+- Switch соединяет проводные устройства в LAN.
+- Порты switch также называют interfaces.
+- В бизнес-сети лучше использовать нормальные управляемые switches в network closet, а не случайные маленькие desk switches.
+- Desk switches добавляют точки отказа и усложняют troubleshooting.
+- Типичные офисные switches часто имеют 24 или 48 портов.
+- Обычный Ethernet-кабель ограничен примерно 328 feet / 100 meters.
+- Wireless access point расширяет проводную LAN в WiFi.
+- AP обычно подключается к switch.
+- Wireless clients попадают в LAN через AP.
+- Antennas влияют на форму зоны покрытия.
+- Omnidirectional antenna распространяет сигнал широко вокруг точки.
+- Directional antenna фокусирует сигнал в одном направлении.
+- Directional wireless иногда используют для связи между зданиями.
 
 ## Notes
 
-### The LAN Foundation
+### LAN Foundation
 
-Inside a coffee shop, many devices need network access:
+В кофейне к сети подключается много разных устройств:
 
 - registers;
 - printers;
@@ -45,329 +42,95 @@ Inside a coffee shop, many devices need network access:
 - wireless client devices;
 - office systems.
 
-Some devices connect with cables. Some connect over WiFi. But both usually tie back to the same wired foundation.
-
-The two key device types:
+Часть устройств подключается кабелем. Часть подключается по WiFi. Но чаще всего все они все равно сходятся в одну проводную основу.
 
 ```text
 Switches + wireless access points
 ```
 
-### The Switch
+### Switch
 
-A switch connects wired devices together on the LAN.
+Switch - это центральная точка для проводных устройств внутри LAN.
 
-LAN means Local Area Network.
+Обычно switches находятся в:
 
-Switches usually live in:
+- network closet;
+- rack;
+- cabinet;
+- MDF/IDF.
 
-- network closets;
-- racks;
-- cabinets;
-- MDF/IDF areas.
-
-Devices connect to switch ports with Ethernet cables.
-
-Switch ports may also be called:
+Каждый endpoint подключается в порт switch через Ethernet cable.
 
 ```text
-interfaces
+Endpoint -> Ethernet cable -> Switch
 ```
 
-### Why Switches Matter
+### Почему не стоит ставить случайные mini-switches
 
-A switch gives wired devices a place to communicate.
+Маленький unmanaged switch под столом кажется удобным решением, когда "не хватает портов". Но в бизнес-сети это быстро превращается в проблему.
 
-Examples:
+Он добавляет:
 
-```text
-Register -> switch
-Printer -> switch
-Camera -> switch
-Access point -> switch
-Office PC -> switch
-```
+- еще один блок питания;
+- еще одну точку отказа;
+- неизвестный участок топологии;
+- лишнюю сложность при troubleshooting.
 
-The switch is usually not flashy, but it is doing the heavy lifting for the LAN all day.
-
-### Avoid Random Desk Switches
-
-Small unmanaged switches under desks may seem convenient, but they create problems in business networks.
-
-Risks:
-
-- extra point of failure;
-- extra power brick;
-- cable clutter;
-- undocumented topology;
-- device can be kicked loose;
-- harder troubleshooting;
-- unknown loops or performance problems;
-- cheap hardware failure during busy hours.
-
-Better approach:
-
-```text
-Solve port needs intentionally with proper cabling and managed switch design.
-```
-
-### Business Switches
-
-In a real business setup, use proper switches in the network closet.
-
-Common port counts:
-
-| Switch size | Typical use |
-| --- | --- |
-| 24 ports | Small/medium network closet |
-| 48 ports | Larger closets or more dense endpoint areas |
-
-Do not obsess over the exact model yet. The important concept is structured, intentional switching.
-
-### Ethernet Distance Limit
-
-Standard Ethernet cable runs are limited to about:
-
-```text
-328 feet / 100 meters
-```
-
-Beyond that, the signal needs help.
-
-Possible solutions:
-
-- place another switch;
-- redesign the cable path;
-- use fiber;
-- use another appropriate media type.
-
-You cannot run copper Ethernet forever and expect reliable results.
+Лучше решать нехватку портов через нормальную кабельную инфраструктуру и управляемые switches.
 
 ### Wireless Access Point
 
-Wireless access point is usually shortened to:
+AP берет проводную сеть и делает ее доступной по WiFi.
+
+Важно: AP не создает магическую отдельную сеть сам по себе. Он обычно подключается обратно в switch.
 
 ```text
-AP
+Wireless client -> AP -> Switch -> LAN resources
 ```
 
-An AP takes the wired network and broadcasts it through the air.
-
-Wireless devices can then connect:
-
-- phones;
-- laptops;
-- tablets;
-- handheld business devices;
-- customer devices.
-
-### WiFi Is Not Magic
-
-WiFi can feel separate, but it is usually an extension of the wired LAN.
-
-Simple path:
-
-```text
-Wireless client -> AP -> switch -> LAN
-```
-
-The AP does not create a separate universe. It connects back into the same network infrastructure.
-
-### Switch and AP Relationship
-
-The switch provides the wired foundation.
-
-The AP extends that foundation wirelessly.
-
-Simple model:
-
-```text
-Wired devices -> switch
-Wireless devices -> AP -> switch
-```
-
-This is why bad switch/cabling design can still break WiFi experiences.
+Если switch, кабель или uplink работают плохо, WiFi тоже будет страдать.
 
 ### Antennas and Coverage
 
-Wireless coverage depends partly on antenna behavior.
+Антенны формируют зону покрытия.
 
-Antennas shape how signal travels.
+`Omnidirectional` антенна раздает сигнал широко вокруг AP. Это типичный вариант для покрытия помещения.
 
-Two broad types from the lesson:
-
-| Antenna type | Signal behavior |
-| --- | --- |
-| Omnidirectional | Broad coverage around the device |
-| Directional | Focused signal in a tighter direction |
-
-### Omnidirectional Antennas
-
-Omnidirectional antennas spread signal broadly.
-
-Mental picture:
-
-```text
-Bubble/circle of coverage around the AP
-```
-
-Good fit for:
-
-- cafe seating area;
-- office spaces;
-- general room coverage;
-- areas where clients are spread around the AP.
-
-### Directional Antennas
-
-Directional antennas focus the signal.
-
-The hose analogy:
-
-```text
-Put your thumb over a hose -> water shoots farther.
-Focus wireless signal -> signal can reach farther in one direction.
-```
-
-Good fit for:
-
-- point-to-point wireless links;
-- connecting nearby buildings;
-- targeting coverage down a hallway;
-- outdoor links across a lot;
-- cases where running cable is expensive or impractical.
-
-### Wireless Building Bridges
-
-Wireless can sometimes connect buildings without trenching cable.
-
-Example:
-
-```text
-Building A AP/antenna -> wireless bridge -> Building B AP/antenna
-```
-
-This can help when NetworkChuck Coffee needs connectivity between nearby buildings and running cable through the ground would be too expensive.
-
-### How the Pieces Fit Together
-
-Physical model:
-
-```text
-Internet -> network equipment -> switch -> wired devices
-                                      -> AP -> wireless devices
-```
-
-More detailed:
-
-```text
-ISP/internet enters the shop.
-Network equipment distributes connectivity internally.
-The switch connects wired LAN devices.
-The AP plugs into the switch.
-Wireless devices join the LAN through the AP.
-```
-
-### Main Takeaway
-
-Switches and wireless access points build the coffee shop LAN.
-
-Short version:
-
-```text
-Switch = local wired foundation.
-AP = wireless extension of that foundation.
-```
-
-If you understand those roles, the rest of the network design has a clear place to attach.
+`Directional` антенна фокусирует сигнал в одном направлении. Такой подход может помочь, если нужно дострелить WiFi между зданиями или в конкретную удаленную зону.
 
 ## Commands / Terms
 
-| Term | Meaning |
-| --- | --- |
-| LAN | Local Area Network. |
-| Switch | Device that connects wired LAN devices. |
-| Port/interface | Physical/logical switch connection where a cable plugs in. |
-| Access point | Device that extends the wired LAN into WiFi. |
-| AP | Short for access point. |
-| WiFi | Wireless network access for client devices. |
-| Ethernet | Wired network technology commonly used to connect LAN devices. |
-| Unmanaged switch | Simple switch with little/no configuration, risky when used randomly in business environments. |
-| Managed switch | Switch with management/configuration features. |
-| Omnidirectional antenna | Antenna that spreads signal broadly around the device. |
-| Directional antenna | Antenna that focuses signal in a specific direction. |
-| Wireless bridge | Wireless link used to connect two network areas or buildings. |
+```text
+LAN - Local Area Network
+AP - Access Point
+Interface - порт устройства
+Omnidirectional antenna - широкая зона покрытия
+Directional antenna - направленная зона покрытия
+100 meters / 328 feet - типичный предел copper Ethernet run
+```
 
 ## Questions
 
-### 1. What two device types build much of the coffee shop LAN?
+### Что делает switch?
 
-Switches and wireless access points.
+Соединяет проводные устройства внутри LAN.
 
-### 2. What does a switch do?
+### Что делает wireless access point?
 
-It connects wired devices together on the LAN.
+Подключается к проводной сети и дает wireless clients доступ к LAN по WiFi.
 
-### 3. What are switch ports sometimes called?
+### Почему WiFi зависит от проводной сети?
 
-Interfaces.
+Потому что AP обычно подключен кабелем в switch. Wireless часть является расширением проводной LAN.
 
-### 4. Why are random unmanaged desk switches risky in a business network?
+### Почему random desk switches опасны в бизнес-сети?
 
-They add failure points, power bricks, undocumented connections and troubleshooting confusion.
-
-### 5. Where should proper business switches usually live?
-
-In a network closet, rack or structured network area.
-
-### 6. What common port counts were mentioned for business switches?
-
-24 ports and 48 ports.
-
-### 7. What is the standard Ethernet copper run limit mentioned?
-
-About 328 feet or 100 meters.
-
-### 8. What does an access point do?
-
-It takes the wired network and broadcasts it wirelessly so WiFi devices can connect.
-
-### 9. Does an AP usually connect back to a switch?
-
-Yes. The AP usually plugs into the switch.
-
-### 10. Why is WiFi not magic?
-
-Because wireless clients usually depend on an AP that is connected to the wired LAN underneath.
-
-### 11. What is an omnidirectional antenna?
-
-An antenna that spreads signal broadly around the device.
-
-### 12. What is a directional antenna?
-
-An antenna that focuses signal in a tighter direction.
-
-### 13. How can directional antennas help between buildings?
-
-They can focus wireless signal far enough to create a point-to-point link when running cable is impractical.
-
-### 14. What is the simple relationship between a switch and an AP?
-
-The switch is the wired foundation, and the AP extends that foundation into WiFi.
-
-### 15. What should you avoid when users need more ports?
-
-Avoid tossing random cheap switches under desks; solve it intentionally with proper cabling and switch design.
+Они создают дополнительные точки отказа и делают сеть менее понятной для поддержки.
 
 ## What To Review Later
 
-- Switch role in the LAN.
-- Port/interface terminology.
-- Why random unmanaged desk switches are bad in business networks.
-- Ethernet 100-meter / 328-foot limit.
-- AP as wired LAN extension into WiFi.
-- WiFi depends on wired infrastructure.
-- Omnidirectional vs directional antennas.
-- Wireless building bridge concept.
-- Switch = foundation, AP = extension.
+- Difference between switch and hub.
+- Managed vs unmanaged switch.
+- AP placement and wireless coverage planning.
+- VLANs for guest WiFi and internal devices.
+- Directional wireless links between buildings.
