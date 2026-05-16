@@ -4,6 +4,8 @@ Source:
 Date added: YYYY-MM-DD  
 Related plan item:  
 Tags:
+Language:
+Translation pair:
 
 ## Summary
 

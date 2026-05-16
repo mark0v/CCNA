@@ -11,6 +11,7 @@
 
 - [STUDY_PLAN.md](STUDY_PLAN.md) - общий план подготовки по CCNA.
 - `articles/` - CCNA-статьи по календарю: `YYYY-MM/week-XX/NN-topic.md`.
+- `articles-en/` - английские версии CCNA-статей с зеркальной структурой.
 - `englishe/` - материалы по английскому.
 - `notes/` - будущие конспекты по темам и урокам.
 - `labs/` - разборы лабораторных работ.
@@ -55,6 +56,8 @@ Learning Materials
 - блок для повторения.
 
 Базовый шаблон: [templates/article-note.md](templates/article-note.md).
+
+Подробные правила написания, перевода и хранения двух языковых версий описаны в [ARTICLE_GUIDE.md](ARTICLE_GUIDE.md).
 
 ## Статический сайт
 
