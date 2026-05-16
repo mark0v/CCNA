@@ -89,6 +89,22 @@ nav:
           - 13 - Creating a Network Diagram: ccna/articles/2026-05/week-02/13-creating-a-network-diagram.md
           - 14 - Physically Connecting the Coffee House: ccna/articles/2026-05/week-02/14-physically-connecting-the-coffee-house.md
           - 15 - The Packet Tracer Coffee House: ccna/articles/2026-05/week-02/15-the-packet-tracer-coffee-house.md
+      - Week 03:
+          - Обзор недели: ccna/articles/2026-05/week-03/index.md
+          - 01 - What Now? Cabling: ccna/articles/2026-05/week-03/01-what-now-cabling.md
+          - 02 - Why Models Actually Matter: ccna/articles/2026-05/week-03/02-why-models-actually-matter.md
+          - 03 - The OSI vs TCP/IP Model: ccna/articles/2026-05/week-03/03-the-osi-vs-tcp-ip-model.md
+          - 04 - Describing Network Communication with Models: ccna/articles/2026-05/week-03/04-describing-network-communication-with-models.md
+          - 05 - Network Design Model - Three Tiered Architecture: ccna/articles/2026-05/week-03/05-network-design-model-three-tiered-architecture.md
+          - 06 - Castle Rysen Network Design: ccna/articles/2026-05/week-03/06-castle-rysen-network-design.md
+          - 07 - What Now? Network Roles and Models: ccna/articles/2026-05/week-03/07-what-now-network-roles-and-models.md
+          - 08 - Why Base Configuration Skill Is Important: ccna/articles/2026-05/week-03/08-why-base-configuration-skill-is-important.md
+          - 09 - Setting Up Console Connections: ccna/articles/2026-05/week-03/09-setting-up-console-connections.md
+          - 10 - Navigating the Cisco IOS Software: ccna/articles/2026-05/week-03/10-navigating-the-cisco-ios-software.md
+          - 11 - Examining the Cisco Device Boot Process: ccna/articles/2026-05/week-03/11-examining-the-cisco-device-boot-process.md
+          - 12 - Implementing a Cisco Base Configuration: ccna/articles/2026-05/week-03/12-implementing-a-cisco-base-configuration.md
+          - 13 - Saving or Resetting Cisco Configurations: ccna/articles/2026-05/week-03/13-saving-or-resetting-cisco-configurations.md
+          - 14 - What Now? Practice Cisco Base Configuration: ccna/articles/2026-05/week-03/14-what-now-practice-cisco-base-configuration.md
   - Englishe:
       - Обзор: englishe/index.md
       - Present Simple: englishe/present-simple.md
