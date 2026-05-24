@@ -105,6 +105,17 @@ nav:
           - 12 - Implementing a Cisco Base Configuration: ccna/articles/2026-05/week-03/12-implementing-a-cisco-base-configuration.md
           - 13 - Saving or Resetting Cisco Configurations: ccna/articles/2026-05/week-03/13-saving-or-resetting-cisco-configurations.md
           - 14 - What Now? Practice Cisco Base Configuration: ccna/articles/2026-05/week-03/14-what-now-practice-cisco-base-configuration.md
+      - Week 04:
+          - Обзор недели: ccna/articles/2026-05/week-04/index.md
+          - 01 - Why Switch Skills Are Important: ccna/articles/2026-05/week-04/01-why-switch-skills-are-important.md
+          - 02 - Understanding MAC Addresses and Frames: ccna/articles/2026-05/week-04/02-understanding-mac-addresses-and-frames.md
+          - 03 - Switch Port Numbering and CAM Table: ccna/articles/2026-05/week-04/03-switch-port-numbering-and-cam-table.md
+          - 04 - How Switches Do What They Do: ccna/articles/2026-05/week-04/04-how-switches-do-what-they-do.md
+          - 05 - Exploring MAC Address Tables on a Cisco Switch: ccna/articles/2026-05/week-04/05-exploring-mac-address-tables-on-a-cisco-switch.md
+          - 06 - Using CAM Table to Track Down Devices: ccna/articles/2026-05/week-04/06-using-cam-table-to-track-down-devices.md
+          - 07 - What Now? Switching Foundations: ccna/articles/2026-05/week-04/07-what-now-switching-foundations.md
+          - 08 - Why IP Addressing Is Important: ccna/articles/2026-05/week-04/08-why-ip-addressing-is-important.md
+          - 09 - Why Do We Need IP Addresses?: ccna/articles/2026-05/week-04/09-why-do-we-need-ip-addresses.md
   - Englishe:
       - Обзор: englishe/index.md
       - Present Simple: englishe/present-simple.md
