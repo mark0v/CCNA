@@ -135,6 +135,19 @@ nav:
       - Have Something Done: englishe/have-something-done.md
   - Quality Assurance:
       - quality-assurance/index.md
+      - Overview:
+          - quality-assurance/overview/index.md
+          - Overview 1: quality-assurance/overview/00-overview-1.md
+          - Testing Theory: quality-assurance/overview/01-testing-theory.md
+          - Web Testing: quality-assurance/overview/02-web-testing.md
+          - API Testing: quality-assurance/overview/03-api-testing.md
+          - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
+          - Database Testing: quality-assurance/overview/05-database-testing.md
+          - Performance Testing: quality-assurance/overview/06-performance-testing.md
+          - Automation: quality-assurance/overview/07-automation.md
+          - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md
+          - Flashcards QA Interview: quality-assurance/overview/flashcards-qa-interview.md
+          - Quiz QA Interview: quality-assurance/overview/quiz-qa-interview.md
       - QA Fundamentals Questions: quality-assurance/01-qa-fundamentals-questions.md
       - Web, Desktop и REST API Questions: quality-assurance/02-web-api-questions.md
       - Real-Time и Client-Server Questions: quality-assurance/03-realtime-client-server-questions.md
