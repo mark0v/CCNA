@@ -10,12 +10,13 @@ DOCS = ROOT / "docs"
 ARTICLES = ROOT / "articles"
 ENGLISHE = ROOT / "englishe"
 QUALITY_ASSURANCE = ROOT / "quality-assurance"
-KUBERNATES = ROOT / "kubernates"
+KUBERNETES = ROOT / "kubernetes"
 
 CCNA_DOCS = DOCS / "ccna"
 ENGLISHE_DOCS = DOCS / "englishe"
 QUALITY_ASSURANCE_DOCS = DOCS / "quality-assurance"
-KUBERNATES_DOCS = DOCS / "kubernates"
+KUBERNETES_DOCS = DOCS / "kubernetes"
+OLD_KUBERNATES_DOCS = DOCS / "kubernates"
 
 
 def title_from_markdown(path: Path) -> str:
@@ -30,10 +31,12 @@ def clean_generated_docs() -> None:
         DOCS / "articles",
         DOCS / "study-plan.md",
         CCNA_DOCS / "articles",
+        CCNA_DOCS / "index.md",
         CCNA_DOCS / "study-plan.md",
         ENGLISHE_DOCS,
         QUALITY_ASSURANCE_DOCS,
-        KUBERNATES_DOCS,
+        KUBERNETES_DOCS,
+        OLD_KUBERNATES_DOCS,
     ]
 
     for generated_path in generated_paths:
@@ -45,7 +48,7 @@ def clean_generated_docs() -> None:
 
 def copy_study_plan() -> None:
     CCNA_DOCS.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(ROOT / "STUDY_PLAN.md", CCNA_DOCS / "study-plan.md")
+    shutil.copy2(ROOT / "STUDY_PLAN.md", CCNA_DOCS / "index.md")
 
 
 def copy_articles() -> None:
@@ -84,13 +87,13 @@ def copy_quality_assurance() -> None:
         shutil.copy2(source, target)
 
 
-def copy_kubernates() -> None:
-    KUBERNATES_DOCS.mkdir(parents=True, exist_ok=True)
+def copy_kubernetes() -> None:
+    KUBERNETES_DOCS.mkdir(parents=True, exist_ok=True)
 
-    for source in sorted(KUBERNATES.rglob("*.md")):
-        relative = source.relative_to(KUBERNATES)
+    for source in sorted(KUBERNETES.rglob("*.md")):
+        relative = source.relative_to(KUBERNETES)
         target_name = "index.md" if relative.name.lower() == "readme.md" else relative.name
-        target = KUBERNATES_DOCS / relative.parent / target_name
+        target = KUBERNETES_DOCS / relative.parent / target_name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
 
@@ -148,7 +151,7 @@ def main() -> None:
     copy_articles()
     copy_englishe()
     copy_quality_assurance()
-    copy_kubernates()
+    copy_kubernetes()
     write_articles_index()
     write_week_indexes()
 

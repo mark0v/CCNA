@@ -16,9 +16,11 @@ site/
 docs/articles/
 docs/study-plan.md
 docs/ccna/articles/
+docs/ccna/index.md
 docs/ccna/study-plan.md
 docs/englishe/
 docs/quality-assurance/
+docs/kubernetes/
 docs/kubernates/
 
 # Python local environment

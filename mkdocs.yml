@@ -1,8 +1,11 @@
 site_name: Learning Materials
-site_description: Учебная библиотека по CCNA, английскому, Quality Assurance, Kubernates и будущим направлениям
+site_description: Учебная библиотека по CCNA, английскому, Quality Assurance, Kubernetes и будущим направлениям
 site_author: Learning Materials
 docs_dir: docs
 site_dir: site
+not_in_nav: |
+  index.md
+  ccna/articles/index.md
 
 theme:
   name: material
@@ -46,93 +49,94 @@ plugins:
         - ru
 
 nav:
-  - Learning Materials: index.md
   - CCNA:
-      - ccna/articles/index.md
-      - Study Plan: ccna/study-plan.md
-      - Articles:
-          - Week 01:
-              - Week Overview: ccna/articles/2026-05/week-01/index.md
-              - 01 - What is a Network?: ccna/articles/2026-05/week-01/01-what-is-a-network.md
-              - 02 - What is a Switch?: ccna/articles/2026-05/week-01/02-what-is-a-switch.md
-              - 03 - What is a Router?: ccna/articles/2026-05/week-01/03-what-is-a-router.md
-              - 04 - What is TCP/IP and OSI?: ccna/articles/2026-05/week-01/04-what-is-tcp-ip-and-osi.md
-              - 05 - REAL LIFE Example: ccna/articles/2026-05/week-01/05-real-life-example-tcp-ip-and-osi-layers.md
-              - 06 - The YouTube OSI Model Story: ccna/articles/2026-05/week-01/06-the-youtube-osi-model-story.md
-              - 07 - Network Design Warning: ccna/articles/2026-05/week-01/07-do-not-design-your-network-like-this.md
-              - 08 - Data Center Networks: ccna/articles/2026-05/week-01/08-data-center-networks-what-do-they-look-like.md
-              - 09 - WAN Is Not Always Internet: ccna/articles/2026-05/week-01/09-wan-its-not-the-internet-sometimes.md
-              - 10 - Home Network Security: ccna/articles/2026-05/week-01/10-lets-hack-your-home-network.md
-              - 11 - Hybrid Cloud: ccna/articles/2026-05/week-01/11-you-need-to-learn-hybrid-cloud-right-now.md
-              - 12 - Ethernet Cables: ccna/articles/2026-05/week-01/12-forcing-my-kids-to-make-ethernet-cables.md
-              - 13 - Power over Ethernet: ccna/articles/2026-05/week-01/13-why-power-over-ethernet-poe-is-amazing.md
-              - 14 - Fiber Optic Cables: ccna/articles/2026-05/week-01/14-fiber-optic-cables-what-you-need-to-know.md
-              - 15 - Port Security: ccna/articles/2026-05/week-01/15-i-can-hack-your-switches-protect-yourself-with-port-security.md
-              - 16 - Packet Tracer Importance: ccna/articles/2026-05/week-01/16-why-this-skill-is-important-packet-tracer.md
-              - 17 - Installing Packet Tracer: ccna/articles/2026-05/week-01/17-installing-packet-tracer.md
-              - 18 - Packet Tracer Essentials: ccna/articles/2026-05/week-01/18-final-essential-packet-tracer-functions.md
-              - 19 - Packet Tracer Next Steps: ccna/articles/2026-05/week-01/19-what-now-packet-tracer.md
-              - 20 - Network Building Skill: ccna/articles/2026-05/week-01/20-why-this-skill-is-important-network-building.md
-              - 21 - Castle Rysen RFP: ccna/articles/2026-05/week-01/21-castle-rysen-coffee-rfp-overview.md
-          - Week 02:
-              - Week Overview: ccna/articles/2026-05/week-02/index.md
-              - 01 - LAN vs. WAN: ccna/articles/2026-05/week-02/01-lan-vs-wan.md
-              - 02 - Staging the Network Equipment: ccna/articles/2026-05/week-02/02-staging-the-network-equipment.md
-              - 03 - Client & Servers: ccna/articles/2026-05/week-02/03-client-and-servers.md
-              - 04 - Switching & Wireless: ccna/articles/2026-05/week-02/04-switching-and-wireless.md
-              - 05 - Router & Firewall: ccna/articles/2026-05/week-02/05-router-and-firewall.md
-              - 06 - What Now?: ccna/articles/2026-05/week-02/06-what-now-network-foundations.md
-              - 07 - Why This Skill is Important: ccna/articles/2026-05/week-02/07-why-this-skill-is-important-connections.md
-              - 08 - Network Standards: ccna/articles/2026-05/week-02/08-the-importance-of-network-standards.md
-              - 09 - Bits and Bytes: ccna/articles/2026-05/week-02/09-determine-speed-with-bits-and-bytes.md
-              - 10 - Copper Cabling: ccna/articles/2026-05/week-02/10-copper-cabling-standards-and-characteristics.md
-              - 11 - Straight-through, Crossover, and MDI-X: ccna/articles/2026-05/week-02/11-using-straight-through-crossover-and-mdi-x.md
-              - 12 - Fiber Optic Cable Spectrum: ccna/articles/2026-05/week-02/12-understanding-fiber-optic-cable-spectrum.md
-              - 13 - Creating a Network Diagram: ccna/articles/2026-05/week-02/13-creating-a-network-diagram.md
-              - 14 - Physically Connecting the Coffee House: ccna/articles/2026-05/week-02/14-physically-connecting-the-coffee-house.md
-              - 15 - The Packet Tracer Coffee House: ccna/articles/2026-05/week-02/15-the-packet-tracer-coffee-house.md
-          - Week 03:
-              - Week Overview: ccna/articles/2026-05/week-03/index.md
-              - 01 - What Now? Cabling: ccna/articles/2026-05/week-03/01-what-now-cabling.md
-              - 02 - Why Models Actually Matter: ccna/articles/2026-05/week-03/02-why-models-actually-matter.md
-              - 03 - The OSI vs TCP/IP Model: ccna/articles/2026-05/week-03/03-the-osi-vs-tcp-ip-model.md
-              - 04 - Describing Network Communication with Models: ccna/articles/2026-05/week-03/04-describing-network-communication-with-models.md
-              - 05 - Network Design Model - Three Tiered Architecture: ccna/articles/2026-05/week-03/05-network-design-model-three-tiered-architecture.md
-              - 06 - Castle Rysen Network Design: ccna/articles/2026-05/week-03/06-castle-rysen-network-design.md
-              - 07 - What Now? Network Roles and Models: ccna/articles/2026-05/week-03/07-what-now-network-roles-and-models.md
-              - 08 - Why Base Configuration Skill Is Important: ccna/articles/2026-05/week-03/08-why-base-configuration-skill-is-important.md
-              - 09 - Setting Up Console Connections: ccna/articles/2026-05/week-03/09-setting-up-console-connections.md
-              - 10 - Navigating the Cisco IOS Software: ccna/articles/2026-05/week-03/10-navigating-the-cisco-ios-software.md
-              - 11 - Examining the Cisco Device Boot Process: ccna/articles/2026-05/week-03/11-examining-the-cisco-device-boot-process.md
-              - 12 - Implementing a Cisco Base Configuration: ccna/articles/2026-05/week-03/12-implementing-a-cisco-base-configuration.md
-              - 13 - Saving or Resetting Cisco Configurations: ccna/articles/2026-05/week-03/13-saving-or-resetting-cisco-configurations.md
-              - 14 - What Now? Practice Cisco Base Configuration: ccna/articles/2026-05/week-03/14-what-now-practice-cisco-base-configuration.md
-          - Week 04:
-              - Week Overview: ccna/articles/2026-05/week-04/index.md
-              - 01 - Why Switch Skills Are Important: ccna/articles/2026-05/week-04/01-why-switch-skills-are-important.md
-              - 02 - Understanding MAC Addresses and Frames: ccna/articles/2026-05/week-04/02-understanding-mac-addresses-and-frames.md
-              - 03 - Switch Port Numbering and CAM Table: ccna/articles/2026-05/week-04/03-switch-port-numbering-and-cam-table.md
-              - 04 - How Switches Do What They Do: ccna/articles/2026-05/week-04/04-how-switches-do-what-they-do.md
-              - 05 - Exploring MAC Address Tables on a Cisco Switch: ccna/articles/2026-05/week-04/05-exploring-mac-address-tables-on-a-cisco-switch.md
-              - 06 - Using CAM Table to Track Down Devices: ccna/articles/2026-05/week-04/06-using-cam-table-to-track-down-devices.md
-              - 07 - What Now? Switching Foundations: ccna/articles/2026-05/week-04/07-what-now-switching-foundations.md
-              - 08 - Why IP Addressing Is Important: ccna/articles/2026-05/week-04/08-why-ip-addressing-is-important.md
-              - 09 - Why Do We Need IP Addresses?: ccna/articles/2026-05/week-04/09-why-do-we-need-ip-addresses.md
+      - ccna/index.md
+      - Week 01:
+          - Week Overview: ccna/articles/2026-05/week-01/index.md
+          - 01 - What is a Network?: ccna/articles/2026-05/week-01/01-what-is-a-network.md
+          - 02 - What is a Switch?: ccna/articles/2026-05/week-01/02-what-is-a-switch.md
+          - 03 - What is a Router?: ccna/articles/2026-05/week-01/03-what-is-a-router.md
+          - 04 - What is TCP/IP and OSI?: ccna/articles/2026-05/week-01/04-what-is-tcp-ip-and-osi.md
+          - 05 - REAL LIFE Example: ccna/articles/2026-05/week-01/05-real-life-example-tcp-ip-and-osi-layers.md
+          - 06 - The YouTube OSI Model Story: ccna/articles/2026-05/week-01/06-the-youtube-osi-model-story.md
+          - 07 - Network Design Warning: ccna/articles/2026-05/week-01/07-do-not-design-your-network-like-this.md
+          - 08 - Data Center Networks: ccna/articles/2026-05/week-01/08-data-center-networks-what-do-they-look-like.md
+          - 09 - WAN Is Not Always Internet: ccna/articles/2026-05/week-01/09-wan-its-not-the-internet-sometimes.md
+          - 10 - Home Network Security: ccna/articles/2026-05/week-01/10-lets-hack-your-home-network.md
+          - 11 - Hybrid Cloud: ccna/articles/2026-05/week-01/11-you-need-to-learn-hybrid-cloud-right-now.md
+          - 12 - Ethernet Cables: ccna/articles/2026-05/week-01/12-forcing-my-kids-to-make-ethernet-cables.md
+          - 13 - Power over Ethernet: ccna/articles/2026-05/week-01/13-why-power-over-ethernet-poe-is-amazing.md
+          - 14 - Fiber Optic Cables: ccna/articles/2026-05/week-01/14-fiber-optic-cables-what-you-need-to-know.md
+          - 15 - Port Security: ccna/articles/2026-05/week-01/15-i-can-hack-your-switches-protect-yourself-with-port-security.md
+          - 16 - Packet Tracer Importance: ccna/articles/2026-05/week-01/16-why-this-skill-is-important-packet-tracer.md
+          - 17 - Installing Packet Tracer: ccna/articles/2026-05/week-01/17-installing-packet-tracer.md
+          - 18 - Packet Tracer Essentials: ccna/articles/2026-05/week-01/18-final-essential-packet-tracer-functions.md
+          - 19 - Packet Tracer Next Steps: ccna/articles/2026-05/week-01/19-what-now-packet-tracer.md
+          - 20 - Network Building Skill: ccna/articles/2026-05/week-01/20-why-this-skill-is-important-network-building.md
+          - 21 - Castle Rysen RFP: ccna/articles/2026-05/week-01/21-castle-rysen-coffee-rfp-overview.md
+      - Week 02:
+          - Week Overview: ccna/articles/2026-05/week-02/index.md
+          - 01 - LAN vs. WAN: ccna/articles/2026-05/week-02/01-lan-vs-wan.md
+          - 02 - Staging the Network Equipment: ccna/articles/2026-05/week-02/02-staging-the-network-equipment.md
+          - 03 - Client & Servers: ccna/articles/2026-05/week-02/03-client-and-servers.md
+          - 04 - Switching & Wireless: ccna/articles/2026-05/week-02/04-switching-and-wireless.md
+          - 05 - Router & Firewall: ccna/articles/2026-05/week-02/05-router-and-firewall.md
+          - 06 - What Now?: ccna/articles/2026-05/week-02/06-what-now-network-foundations.md
+          - 07 - Why This Skill is Important: ccna/articles/2026-05/week-02/07-why-this-skill-is-important-connections.md
+          - 08 - Network Standards: ccna/articles/2026-05/week-02/08-the-importance-of-network-standards.md
+          - 09 - Bits and Bytes: ccna/articles/2026-05/week-02/09-determine-speed-with-bits-and-bytes.md
+          - 10 - Copper Cabling: ccna/articles/2026-05/week-02/10-copper-cabling-standards-and-characteristics.md
+          - 11 - Straight-through, Crossover, and MDI-X: ccna/articles/2026-05/week-02/11-using-straight-through-crossover-and-mdi-x.md
+          - 12 - Fiber Optic Cable Spectrum: ccna/articles/2026-05/week-02/12-understanding-fiber-optic-cable-spectrum.md
+          - 13 - Creating a Network Diagram: ccna/articles/2026-05/week-02/13-creating-a-network-diagram.md
+          - 14 - Physically Connecting the Coffee House: ccna/articles/2026-05/week-02/14-physically-connecting-the-coffee-house.md
+          - 15 - The Packet Tracer Coffee House: ccna/articles/2026-05/week-02/15-the-packet-tracer-coffee-house.md
+      - Week 03:
+          - Week Overview: ccna/articles/2026-05/week-03/index.md
+          - 01 - What Now? Cabling: ccna/articles/2026-05/week-03/01-what-now-cabling.md
+          - 02 - Why Models Actually Matter: ccna/articles/2026-05/week-03/02-why-models-actually-matter.md
+          - 03 - The OSI vs TCP/IP Model: ccna/articles/2026-05/week-03/03-the-osi-vs-tcp-ip-model.md
+          - 04 - Describing Network Communication with Models: ccna/articles/2026-05/week-03/04-describing-network-communication-with-models.md
+          - 05 - Network Design Model - Three Tiered Architecture: ccna/articles/2026-05/week-03/05-network-design-model-three-tiered-architecture.md
+          - 06 - Castle Rysen Network Design: ccna/articles/2026-05/week-03/06-castle-rysen-network-design.md
+          - 07 - What Now? Network Roles and Models: ccna/articles/2026-05/week-03/07-what-now-network-roles-and-models.md
+          - 08 - Why Base Configuration Skill Is Important: ccna/articles/2026-05/week-03/08-why-base-configuration-skill-is-important.md
+          - 09 - Setting Up Console Connections: ccna/articles/2026-05/week-03/09-setting-up-console-connections.md
+          - 10 - Navigating the Cisco IOS Software: ccna/articles/2026-05/week-03/10-navigating-the-cisco-ios-software.md
+          - 11 - Examining the Cisco Device Boot Process: ccna/articles/2026-05/week-03/11-examining-the-cisco-device-boot-process.md
+          - 12 - Implementing a Cisco Base Configuration: ccna/articles/2026-05/week-03/12-implementing-a-cisco-base-configuration.md
+          - 13 - Saving or Resetting Cisco Configurations: ccna/articles/2026-05/week-03/13-saving-or-resetting-cisco-configurations.md
+          - 14 - What Now? Practice Cisco Base Configuration: ccna/articles/2026-05/week-03/14-what-now-practice-cisco-base-configuration.md
+      - Week 04:
+          - Week Overview: ccna/articles/2026-05/week-04/index.md
+          - 01 - Why Switch Skills Are Important: ccna/articles/2026-05/week-04/01-why-switch-skills-are-important.md
+          - 02 - Understanding MAC Addresses and Frames: ccna/articles/2026-05/week-04/02-understanding-mac-addresses-and-frames.md
+          - 03 - Switch Port Numbering and CAM Table: ccna/articles/2026-05/week-04/03-switch-port-numbering-and-cam-table.md
+          - 04 - How Switches Do What They Do: ccna/articles/2026-05/week-04/04-how-switches-do-what-they-do.md
+          - 05 - Exploring MAC Address Tables on a Cisco Switch: ccna/articles/2026-05/week-04/05-exploring-mac-address-tables-on-a-cisco-switch.md
+          - 06 - Using CAM Table to Track Down Devices: ccna/articles/2026-05/week-04/06-using-cam-table-to-track-down-devices.md
+          - 07 - What Now? Switching Foundations: ccna/articles/2026-05/week-04/07-what-now-switching-foundations.md
+          - 08 - Why IP Addressing Is Important: ccna/articles/2026-05/week-04/08-why-ip-addressing-is-important.md
+          - 09 - Why Do We Need IP Addresses?: ccna/articles/2026-05/week-04/09-why-do-we-need-ip-addresses.md
   - Englishe:
       - englishe/index.md
-      - Grammar:
-          - Present Simple: englishe/present-simple.md
-          - Present Continuous: englishe/present-continuous.md
-          - Present Perfect: englishe/present-perfect.md
-          - Present Perfect Continuous: englishe/present-perfect-continuous.md
-          - Past Simple: englishe/past-simple.md
-          - Past Continuous: englishe/past-continuous.md
-          - Past Perfect: englishe/past-perfect.md
-          - Future Simple: englishe/future-simple.md
-          - Future Continuous: englishe/future-continuous.md
-          - Be going to: englishe/be-going-to.md
-          - Have Something Done: englishe/have-something-done.md
+      - Present Simple: englishe/present-simple.md
+      - Present Continuous: englishe/present-continuous.md
+      - Present Perfect: englishe/present-perfect.md
+      - Present Perfect Continuous: englishe/present-perfect-continuous.md
+      - Past Simple: englishe/past-simple.md
+      - Past Continuous: englishe/past-continuous.md
+      - Past Perfect: englishe/past-perfect.md
+      - Future Simple: englishe/future-simple.md
+      - Future Continuous: englishe/future-continuous.md
+      - Be going to: englishe/be-going-to.md
+      - Have Something Done: englishe/have-something-done.md
   - Quality Assurance:
       - quality-assurance/index.md
-  - Kubernates:
-      - kubernates/index.md
+      - QA Fundamentals Questions: quality-assurance/01-qa-fundamentals-questions.md
+      - Web, Desktop и REST API Questions: quality-assurance/02-web-api-questions.md
+      - Real-Time и Client-Server Questions: quality-assurance/03-realtime-client-server-questions.md
+      - Mobile Testing Questions: quality-assurance/04-mobile-questions.md
+      - Database and SQL Questions: quality-assurance/05-database-sql-questions.md
+  - Kubernetes:
+      - kubernetes/index.md
