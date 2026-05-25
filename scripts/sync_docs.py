@@ -9,9 +9,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 ARTICLES = ROOT / "articles"
 ENGLISHE = ROOT / "englishe"
+QUALITY_ASSURANCE = ROOT / "quality-assurance"
 
 CCNA_DOCS = DOCS / "ccna"
 ENGLISHE_DOCS = DOCS / "englishe"
+QUALITY_ASSURANCE_DOCS = DOCS / "quality-assurance"
 
 
 def title_from_markdown(path: Path) -> str:
@@ -28,6 +30,7 @@ def clean_generated_docs() -> None:
         CCNA_DOCS / "articles",
         CCNA_DOCS / "study-plan.md",
         ENGLISHE_DOCS,
+        QUALITY_ASSURANCE_DOCS,
     ]
 
     for generated_path in generated_paths:
@@ -65,6 +68,17 @@ def copy_englishe() -> None:
     for source in sorted(ENGLISHE.glob("*.md")):
         target_name = "index.md" if source.name.lower() == "readme.md" else source.name
         shutil.copy2(source, ENGLISHE_DOCS / target_name)
+
+
+def copy_quality_assurance() -> None:
+    QUALITY_ASSURANCE_DOCS.mkdir(parents=True, exist_ok=True)
+
+    for source in sorted(QUALITY_ASSURANCE.rglob("*.md")):
+        relative = source.relative_to(QUALITY_ASSURANCE)
+        target_name = "index.md" if relative.name.lower() == "readme.md" else relative.name
+        target = QUALITY_ASSURANCE_DOCS / relative.parent / target_name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
 
 
 def article_link(path: Path, base: Path) -> str:
@@ -119,6 +133,7 @@ def main() -> None:
     copy_study_plan()
     copy_articles()
     copy_englishe()
+    copy_quality_assurance()
     write_articles_index()
     write_week_indexes()
 
