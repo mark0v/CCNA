@@ -48,6 +48,9 @@ plugins:
         - en
         - ru
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - CCNA:
       - ccna/index.md
