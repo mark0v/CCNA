@@ -140,11 +140,14 @@ nav:
           - Overview 1: quality-assurance/overview/00-overview-1.md
           - Testing Theory:
               - quality-assurance/overview/testing-theory/index.md
-              - Waterfall Model: quality-assurance/overview/testing-theory/waterfall-model.md
-              - V-Model: quality-assurance/overview/testing-theory/v-model.md
-              - Scrum: quality-assurance/overview/testing-theory/scrum.md
-              - Kanban: quality-assurance/overview/testing-theory/kanban.md
-              - Extreme Programming: quality-assurance/overview/testing-theory/extreme-programming.md
+              - Development Models:
+                  - quality-assurance/overview/testing-theory/development-models/index.md
+                  - Waterfall Model: quality-assurance/overview/testing-theory/development-models/waterfall-model.md
+                  - V-Model: quality-assurance/overview/testing-theory/development-models/v-model.md
+                  - Scrum: quality-assurance/overview/testing-theory/development-models/scrum.md
+                  - Kanban: quality-assurance/overview/testing-theory/development-models/kanban.md
+                  - Extreme Programming: quality-assurance/overview/testing-theory/development-models/extreme-programming.md
+              - Software Testing Life Cycle: quality-assurance/overview/testing-theory/software-testing-life-cycle.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
