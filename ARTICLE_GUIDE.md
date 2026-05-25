@@ -24,6 +24,7 @@ articles/YYYY-MM/week-XX/NN-topic-name.md
 
 ```text
 articles-en/YYYY-MM/week-XX/NN-topic-name.md
+quality-assurance-en/path/to/article.md
 ```
 
 Пример:
@@ -41,6 +42,7 @@ articles-en/2026-05/week-02/01-lan-vs-wan.md
 
 - Russian - основная версия для чтения сейчас;
 - English - параллельная версия для будущего переключателя языка.
+- English QA materials are stored in `quality-assurance-en/` and are not published until localization is added.
 
 Для каждой новой CCNA-статьи нужно стремиться сохранять обе версии:
 
