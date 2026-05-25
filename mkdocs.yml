@@ -12,7 +12,6 @@ theme:
   language: ru
   features:
     - navigation.instant
-    - navigation.sections
     - navigation.indexes
     - navigation.top
     - search.highlight
