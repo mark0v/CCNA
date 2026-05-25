@@ -9,6 +9,7 @@
 - [CCNA](ccna/articles/index.md) - сетевые технологии, статьи, лабораторные заметки и план подготовки.
 - [Englishe](englishe/index.md) - английские времена и грамматические конструкции.
 - [Quality Assurance](quality-assurance/index.md) - материалы по тестированию, QA-практикам и инструментам.
+- [Kubernates](kubernates/index.md) - материалы по Kubernetes, контейнерной инфраструктуре и практическим сценариям.
 
 ## Как читать
 

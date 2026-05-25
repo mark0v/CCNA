@@ -1,5 +1,5 @@
 site_name: Learning Materials
-site_description: Учебная библиотека по CCNA, английскому, Quality Assurance и будущим направлениям
+site_description: Учебная библиотека по CCNA, английскому, Quality Assurance, Kubernates и будущим направлениям
 site_author: Learning Materials
 docs_dir: docs
 site_dir: site
@@ -10,6 +10,7 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.highlight
     - search.suggest
@@ -45,9 +46,9 @@ plugins:
         - ru
 
 nav:
-  - Home: index.md
+  - Learning Materials: index.md
   - CCNA:
-      - Overview: ccna/articles/index.md
+      - ccna/articles/index.md
       - Study Plan: ccna/study-plan.md
       - Articles:
           - Week 01:
@@ -118,7 +119,7 @@ nav:
               - 08 - Why IP Addressing Is Important: ccna/articles/2026-05/week-04/08-why-ip-addressing-is-important.md
               - 09 - Why Do We Need IP Addresses?: ccna/articles/2026-05/week-04/09-why-do-we-need-ip-addresses.md
   - Englishe:
-      - Overview: englishe/index.md
+      - englishe/index.md
       - Grammar:
           - Present Simple: englishe/present-simple.md
           - Present Continuous: englishe/present-continuous.md
@@ -132,4 +133,6 @@ nav:
           - Be going to: englishe/be-going-to.md
           - Have Something Done: englishe/have-something-done.md
   - Quality Assurance:
-      - Overview: quality-assurance/index.md
+      - quality-assurance/index.md
+  - Kubernates:
+      - kubernates/index.md
