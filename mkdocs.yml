@@ -143,6 +143,7 @@ nav:
               - Waterfall Model: quality-assurance/overview/testing-theory/waterfall-model.md
               - V-Model: quality-assurance/overview/testing-theory/v-model.md
               - Scrum: quality-assurance/overview/testing-theory/scrum.md
+              - Kanban: quality-assurance/overview/testing-theory/kanban.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
