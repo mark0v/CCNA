@@ -138,7 +138,10 @@ nav:
       - Overview:
           - quality-assurance/overview/index.md
           - Overview 1: quality-assurance/overview/00-overview-1.md
-          - Testing Theory: quality-assurance/overview/01-testing-theory.md
+          - Testing Theory:
+              - quality-assurance/overview/testing-theory/index.md
+              - Waterfall Model: quality-assurance/overview/testing-theory/waterfall-model.md
+              - Waterfall Model EN: quality-assurance/overview/testing-theory/waterfall-model-en.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md

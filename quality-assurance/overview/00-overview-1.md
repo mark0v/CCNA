@@ -19,7 +19,7 @@
 
 | № | Тема | Твой уровень | Приоритет | Файл |
 |---|------|-------------|-----------|------|
-| 1 | Теория тестирования | 🟡 Частично | ⭐⭐⭐ Высокий | [01-testing-theory.md](01-testing-theory.md) |
+| 1 | Теория тестирования | 🟡 Частично | ⭐⭐⭐ Высокий | [testing-theory/index.md](testing-theory/index.md) |
 | 2 | Web тестирование | 🟡 Частично | ⭐⭐⭐ Высокий | [02-web-testing.md](02-web-testing.md) |
 | 3 | API тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [03-api-testing.md](03-api-testing.md) |
 | 4 | Mobile тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [04-mobile-testing.md](04-mobile-testing.md) |
