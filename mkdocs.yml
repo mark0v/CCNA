@@ -148,6 +148,7 @@ nav:
                   - Kanban: quality-assurance/overview/testing-theory/development-models/kanban.md
                   - Extreme Programming: quality-assurance/overview/testing-theory/development-models/extreme-programming.md
               - Software Testing Life Cycle: quality-assurance/overview/testing-theory/software-testing-life-cycle.md
+              - Severity and Priority: quality-assurance/overview/testing-theory/severity-and-priority.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
