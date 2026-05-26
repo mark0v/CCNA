@@ -156,6 +156,7 @@ nav:
               - Acceptance Testing / UAT: quality-assurance/overview/testing-theory/acceptance-testing.md
               - Sanity vs Smoke Testing: quality-assurance/overview/testing-theory/sanity-vs-smoke-testing.md
               - Regression Testing: quality-assurance/overview/testing-theory/regression-testing.md
+              - Functional Testing: quality-assurance/overview/testing-theory/functional-testing.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
