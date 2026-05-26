@@ -152,6 +152,7 @@ nav:
               - Seven Testing Principles: quality-assurance/overview/testing-theory/seven-testing-principles.md
               - Integration Testing: quality-assurance/overview/testing-theory/integration-testing.md
               - System Testing: quality-assurance/overview/testing-theory/system-testing.md
+              - System vs Integration Testing: quality-assurance/overview/testing-theory/system-vs-integration-testing.md
               - Acceptance Testing / UAT: quality-assurance/overview/testing-theory/acceptance-testing.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
