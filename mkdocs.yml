@@ -159,6 +159,8 @@ nav:
               - Functional Testing: quality-assurance/overview/testing-theory/functional-testing.md
               - Static vs Dynamic Testing: quality-assurance/overview/testing-theory/static-vs-dynamic-testing.md
               - Non-Functional Testing Types: quality-assurance/overview/testing-theory/non-functional-testing-types.md
+              - Test Design Technique:
+                  - quality-assurance/overview/testing-theory/test-design-technique/index.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
