@@ -6,6 +6,7 @@ site_dir: site
 not_in_nav: |
   index.md
   ccna/articles/index.md
+  quality-assurance/overview/00-overview-1.md
 
 theme:
   name: material
@@ -49,6 +50,9 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/nav-folder-toggle.js
 
 nav:
   - CCNA:
@@ -137,7 +141,6 @@ nav:
       - quality-assurance/index.md
       - Overview:
           - quality-assurance/overview/index.md
-          - Overview 1: quality-assurance/overview/00-overview-1.md
           - Testing Theory:
               - quality-assurance/overview/testing-theory/index.md
               - Development Models:
