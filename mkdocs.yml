@@ -162,6 +162,7 @@ nav:
               - Test Design Technique:
                   - quality-assurance/overview/testing-theory/test-design-technique/index.md
                   - Equivalence Partitioning: quality-assurance/overview/testing-theory/test-design-technique/equivalence-partitioning.md
+                  - Boundary Value Analysis: quality-assurance/overview/testing-theory/test-design-technique/boundary-value-analysis.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
