@@ -151,6 +151,7 @@ nav:
               - Severity and Priority: quality-assurance/overview/testing-theory/severity-and-priority.md
               - Seven Testing Principles: quality-assurance/overview/testing-theory/seven-testing-principles.md
               - Integration Testing: quality-assurance/overview/testing-theory/integration-testing.md
+              - System Testing: quality-assurance/overview/testing-theory/system-testing.md
           - Web Testing: quality-assurance/overview/02-web-testing.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
