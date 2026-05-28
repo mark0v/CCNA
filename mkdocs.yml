@@ -156,6 +156,7 @@ nav:
               - Test Documentation:
                   - quality-assurance/overview/testing-theory/test-documentation/index.md
                   - Test Plan: quality-assurance/overview/testing-theory/test-documentation/test-plan.md
+                  - Test Strategy: quality-assurance/overview/testing-theory/test-documentation/test-strategy.md
               - Levels of Testing:
                   - quality-assurance/overview/testing-theory/levels-of-testing/index.md
                   - Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/integration-testing.md
