@@ -153,6 +153,9 @@ nav:
               - Software Testing Life Cycle: quality-assurance/overview/testing-theory/software-testing-life-cycle.md
               - Severity and Priority: quality-assurance/overview/testing-theory/severity-and-priority.md
               - Seven Testing Principles: quality-assurance/overview/testing-theory/seven-testing-principles.md
+              - Test Documentation:
+                  - quality-assurance/overview/testing-theory/test-documentation/index.md
+                  - Test Plan: quality-assurance/overview/testing-theory/test-documentation/test-plan.md
               - Levels of Testing:
                   - quality-assurance/overview/testing-theory/levels-of-testing/index.md
                   - Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/integration-testing.md
