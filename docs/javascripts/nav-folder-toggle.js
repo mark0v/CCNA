@@ -8,6 +8,12 @@
         return;
       }
 
+      var href = link.getAttribute("href");
+      var nestedLink = link.querySelector(":scope > a[href]");
+      if ((href && href !== "#") || nestedLink) {
+        return;
+      }
+
       link.dataset.folderToggleReady = "true";
       link.style.cursor = "pointer";
 
