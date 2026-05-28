@@ -52,7 +52,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
-  - javascripts/nav-folder-toggle.js
+  - javascripts/nav-folder-toggle-v2.js
 
 nav:
   - CCNA:
