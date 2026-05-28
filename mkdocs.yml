@@ -159,6 +159,7 @@ nav:
                   - Test Plan Example: quality-assurance/overview/testing-theory/test-documentation/test-plan-example.md
                   - Test Strategy: quality-assurance/overview/testing-theory/test-documentation/test-strategy.md
                   - Test Coverage: quality-assurance/overview/testing-theory/test-documentation/test-coverage.md
+                  - Risk Based Testing: quality-assurance/overview/testing-theory/test-documentation/risk-based-testing.md
               - Levels of Testing:
                   - quality-assurance/overview/testing-theory/levels-of-testing/index.md
                   - Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/integration-testing.md
