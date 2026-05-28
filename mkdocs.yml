@@ -159,11 +159,13 @@ nav:
                   - System Testing: quality-assurance/overview/testing-theory/levels-of-testing/system-testing.md
                   - System vs Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/system-vs-integration-testing.md
                   - Acceptance Testing / UAT: quality-assurance/overview/testing-theory/levels-of-testing/acceptance-testing.md
-              - Sanity vs Smoke Testing: quality-assurance/overview/testing-theory/sanity-vs-smoke-testing.md
-              - Regression Testing: quality-assurance/overview/testing-theory/regression-testing.md
-              - Functional Testing: quality-assurance/overview/testing-theory/functional-testing.md
-              - Static vs Dynamic Testing: quality-assurance/overview/testing-theory/static-vs-dynamic-testing.md
-              - Non-Functional Testing Types: quality-assurance/overview/testing-theory/non-functional-testing-types.md
+              - Types of Testing:
+                  - quality-assurance/overview/testing-theory/types-of-testing/index.md
+                  - Sanity vs Smoke Testing: quality-assurance/overview/testing-theory/types-of-testing/sanity-vs-smoke-testing.md
+                  - Regression Testing: quality-assurance/overview/testing-theory/types-of-testing/regression-testing.md
+                  - Functional Testing: quality-assurance/overview/testing-theory/types-of-testing/functional-testing.md
+                  - Static vs Dynamic Testing: quality-assurance/overview/testing-theory/types-of-testing/static-vs-dynamic-testing.md
+                  - Non-Functional Testing Types: quality-assurance/overview/testing-theory/types-of-testing/non-functional-testing-types.md
               - Test Design Technique:
                   - quality-assurance/overview/testing-theory/test-design-technique/index.md
                   - Equivalence Partitioning: quality-assurance/overview/testing-theory/test-design-technique/equivalence-partitioning.md
