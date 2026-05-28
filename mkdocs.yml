@@ -161,6 +161,7 @@ nav:
                   - Test Coverage: quality-assurance/overview/testing-theory/test-documentation/test-coverage.md
                   - Risk Based Testing: quality-assurance/overview/testing-theory/test-documentation/risk-based-testing.md
                   - CI/CD: quality-assurance/overview/testing-theory/test-documentation/ci-cd.md
+                  - QA Metrics: quality-assurance/overview/testing-theory/test-documentation/qa-metrics.md
               - Levels of Testing:
                   - quality-assurance/overview/testing-theory/levels-of-testing/index.md
                   - Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/integration-testing.md
