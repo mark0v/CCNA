@@ -172,6 +172,7 @@ nav:
                   - Wideband Delphi: quality-assurance/overview/testing-theory/test-management/wideband-delphi.md
                   - Three Point Estimation: quality-assurance/overview/testing-theory/test-management/three-point-estimation.md
                   - PERT: quality-assurance/overview/testing-theory/test-management/pert.md
+                  - Analogous Estimation: quality-assurance/overview/testing-theory/test-management/analogous-estimation.md
               - Levels of Testing:
                   - quality-assurance/overview/testing-theory/levels-of-testing/index.md
                   - Integration Testing: quality-assurance/overview/testing-theory/levels-of-testing/integration-testing.md
