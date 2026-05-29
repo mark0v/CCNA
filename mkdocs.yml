@@ -166,6 +166,7 @@ nav:
               - Test Management:
                   - quality-assurance/overview/testing-theory/test-management/index.md
                   - Estimation Techniques: quality-assurance/overview/testing-theory/test-management/estimation-techniques.md
+                  - Testing Estimation: quality-assurance/overview/testing-theory/test-management/testing-estimation.md
                   - Work Breakdown Structure: quality-assurance/overview/testing-theory/test-management/wbs.md
                   - Project Estimation Approach: quality-assurance/overview/testing-theory/test-management/project-estimation-approach.md
                   - Function Points: quality-assurance/overview/testing-theory/test-management/function-points.md
