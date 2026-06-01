@@ -206,6 +206,7 @@ nav:
               - Web Server: quality-assurance/overview/web-testing/web-server.md
               - HTTP Status Codes: quality-assurance/overview/web-testing/http-status-codes.md
               - HTTP Headers: quality-assurance/overview/web-testing/http-headers.md
+              - PUT Vs PATCH: quality-assurance/overview/web-testing/put-vs-patch.md
               - Cryptography: quality-assurance/overview/web-testing/cryptography.md
               - Microservices: quality-assurance/overview/web-testing/microservices.md
           - API Testing: quality-assurance/overview/03-api-testing.md
