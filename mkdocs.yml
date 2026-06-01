@@ -203,6 +203,7 @@ nav:
               - quality-assurance/overview/web-testing/index.md
               - Web Application Testing Guide: quality-assurance/overview/web-testing/web-application-testing-guide.md
               - E-Commerce Testing: quality-assurance/overview/web-testing/e-commerce-testing.md
+              - Payment Gateway Testing: quality-assurance/overview/web-testing/payment-gateway-testing.md
               - Cookie Testing: quality-assurance/overview/web-testing/cookie-testing.md
               - Localization And Internationalization Testing: quality-assurance/overview/web-testing/localization-internationalization-testing.md
               - Three-Tier Architecture: quality-assurance/overview/web-testing/three-tier-architecture.md
