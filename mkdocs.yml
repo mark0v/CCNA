@@ -124,6 +124,9 @@ nav:
           - 07 - What Now? Switching Foundations: ccna/articles/2026-05/week-04/07-what-now-switching-foundations.md
           - 08 - Why IP Addressing Is Important: ccna/articles/2026-05/week-04/08-why-ip-addressing-is-important.md
           - 09 - Why Do We Need IP Addresses?: ccna/articles/2026-05/week-04/09-why-do-we-need-ip-addresses.md
+      - Week 05:
+          - Week Overview: ccna/articles/2026-05/week-05/index.md
+          - 01 - Subnet Mask Defines the Network: ccna/articles/2026-05/week-05/01-subnet-mask-defines-the-network.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
