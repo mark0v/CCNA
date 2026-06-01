@@ -68,6 +68,53 @@ Server - это сторона, которая предоставляет servic
 
 Server обычно мощнее client, потому что может одновременно обслуживать много users и хранить централизованные данные.
 
+## Web Application In Client-Server Model
+
+Web application - это тип client-server software.
+
+В типичном web application:
+
+- browser выступает как client;
+- web server или backend выступает как server;
+- database хранит structured information;
+- data transfer protocol определяет правила обмена данными.
+
+Основная часть application logic часто находится на server side. Server получает request, обрабатывает его по business logic, обращается к database если нужно, и формирует response для user.
+
+Browser получает response и превращает его в graphical interface: page, buttons, forms, messages, tables и другие UI elements.
+
+Для QA это важная мысль:
+
+> Browser показывает результат, но причина bug часто находится на server side или в database.
+
+## Database
+
+Database - это repository для structured storage of information.
+
+В client-server systems database может хранить:
+
+- users;
+- orders;
+- payments;
+- products;
+- settings;
+- permissions;
+- logs;
+- content.
+
+Server обычно обращается к database, когда ему нужны данные для response или когда нужно сохранить результат user action.
+
+Пример:
+
+User нажимает `Save`.
+
+```text
+Browser -> Server -> Database
+Database -> Server -> Browser
+```
+
+Если после refresh данные исчезли, problem может быть в UI, request, server validation, database save logic или cache.
+
 ## Everyday Examples
 
 ## Mail Server
@@ -198,6 +245,71 @@ Server response может содержать:
 - redirected location.
 
 Для QA это один из главных источников информации при troubleshooting.
+
+## Basic Status Codes
+
+Каждый server response обычно содержит status code. Он помогает быстро понять, как server обработал request.
+
+| Status Code | Meaning | QA Note |
+| --- | --- | --- |
+| `200 OK` | Request успешно обработан. | Проверить, что response body действительно содержит правильные данные. |
+| `201 Created` | Resource создан. | Часто ожидается после create actions. |
+| `301 Moved Permanently` | Permanent redirect. | Проверить, что redirect ведет в правильное место. |
+| `302 Found` | Temporary redirect. | Часто встречается после login/logout или route changes. |
+| `400 Bad Request` | Request некорректный. | Проверить validation and error message. |
+| `401 Unauthorized` | Нужна authentication. | User не залогинен или token invalid/expired. |
+| `403 Forbidden` | User authenticated, но access запрещен. | Важно для authorization checks. |
+| `404 Not Found` | Resource не найден. | Проверить broken links, routes, file paths. |
+| `500 Internal Server Error` | Server-side error. | UI не должен показывать stack trace или technical secrets. |
+
+Status code не заменяет полноценную проверку. `200 OK` может прийти с wrong data, а `400` может быть правильным результатом для invalid input.
+
+## Data Transfer Protocols
+
+Data transfer protocol - это набор правил, по которым programs обмениваются data.
+
+Для web testing чаще всего важны HTTP и HTTPS, но полезно знать и другие protocols.
+
+| Protocol | Purpose |
+| --- | --- |
+| HTTP | Передача web resources, например HTML documents, API responses, images, scripts. |
+| HTTPS | HTTP over secure encrypted connection. Используется для защиты sensitive data. |
+| FTP | Передача files между computers over network. |
+| POP3 | Получение emails с mail server на device. |
+
+## HTTP
+
+HTTP, Hypertext Transfer Protocol, - foundation of data exchange on the web.
+
+Browser использует HTTP, чтобы запрашивать resources у server:
+
+- pages;
+- images;
+- scripts;
+- styles;
+- API data.
+
+## HTTPS
+
+HTTPS - это HTTP с security layer.
+
+Буква `S` означает secure. Данные между client и server encrypted, поэтому attacker не может так просто прочитать login, password, token или personal data.
+
+QA должен проверять:
+
+- sensitive pages открываются по HTTPS;
+- HTTP redirects to HTTPS;
+- no mixed content;
+- cookies have secure flags where needed;
+- forms with credentials не отправляются over HTTP.
+
+## FTP And POP3
+
+FTP используется для transferring files.
+
+POP3 используется для receiving emails на local device.
+
+Они не являются основой modern browser web apps, но помогают понять, что client-server model шире, чем только browser and website.
 
 ## Types Of Client-Server Architecture
 
@@ -464,8 +576,12 @@ QA investigation:
 | Response | Ответ server на request. |
 | DNS | Сервис, который помогает найти IP address по domain name. |
 | HTTP/HTTPS | Protocols, по которым browser общается с web server. |
+| FTP | Protocol для передачи files между computers over network. |
+| POP3 | Protocol для получения emails с mail server. |
+| Status code | Numeric code в response, который показывает результат обработки request. |
 | Web server | Server, который отдает web pages, static files или responses. |
 | Application server | Server, где обычно живет business logic. |
+| Database | Structured storage для application data. |
 | File server | Server для централизованного хранения files. |
 | Mail server | Server для отправки и получения emails. |
 | Peer-to-peer | Модель, где participants могут одновременно запрашивать и предоставлять services. |
@@ -505,6 +621,14 @@ Clients могут потерять доступ к service, например us
 
 Потому что UI может показать message ошибочно. Нужно проверить server response, API result или database state.
 
+### 9. Чем HTTP отличается от HTTPS?
+
+HTTPS использует encrypted connection, поэтому лучше защищает sensitive data между client и server.
+
+### 10. Почему QA должен смотреть не только UI, но и status codes?
+
+Потому что status code показывает результат server-side обработки request и помогает отличить success, redirect, client error и server error.
+
 ## What To Review Later
 
 - HTTP and HTTPS
@@ -513,5 +637,7 @@ Clients могут потерять доступ к service, например us
 - API Testing
 - Three-Tier Architecture
 - Status Codes
+- Web Server
+- Cryptography
 - Client-Side Validation
 - Server-Side Validation

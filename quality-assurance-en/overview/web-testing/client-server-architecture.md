@@ -68,6 +68,53 @@ Examples of servers:
 
 A server is usually more powerful than a client because it may serve many users at the same time and store centralized data.
 
+## Web Application In Client-Server Model
+
+A web application is a type of client-server software.
+
+In a typical web application:
+
+- the browser acts as the client;
+- the web server or backend acts as the server;
+- the database stores structured information;
+- the data transfer protocol defines how data is exchanged.
+
+The main part of application logic often lives on the server side. The server receives a request, processes it according to business logic, accesses the database if needed, and generates a response for the user.
+
+The browser receives the response and turns it into a graphical interface: page, buttons, forms, messages, tables, and other UI elements.
+
+For QA, the important idea is:
+
+> The browser shows the result, but the cause of a bug often lives on the server side or in the database.
+
+## Database
+
+A database is a repository for structured storage of information.
+
+In client-server systems, a database may store:
+
+- users;
+- orders;
+- payments;
+- products;
+- settings;
+- permissions;
+- logs;
+- content.
+
+The server usually accesses the database when it needs data for a response or when it needs to save the result of a user action.
+
+Example:
+
+User clicks `Save`.
+
+```text
+Browser -> Server -> Database
+Database -> Server -> Browser
+```
+
+If data disappears after refresh, the problem may be in UI, request, server validation, database save logic, or cache.
+
 ## Everyday Examples
 
 ## Mail Server
@@ -198,6 +245,71 @@ A server response may contain:
 - redirected location.
 
 For QA, this is one of the main sources of information during troubleshooting.
+
+## Basic Status Codes
+
+Every server response usually contains a status code. It helps quickly understand how the server processed the request.
+
+| Status Code | Meaning | QA Note |
+| --- | --- | --- |
+| `200 OK` | Request processed successfully. | Check that response body really contains correct data. |
+| `201 Created` | Resource created. | Often expected after create actions. |
+| `301 Moved Permanently` | Permanent redirect. | Check that redirect goes to the correct location. |
+| `302 Found` | Temporary redirect. | Often appears after login/logout or route changes. |
+| `400 Bad Request` | Request is invalid. | Check validation and error message. |
+| `401 Unauthorized` | Authentication is required. | User is not logged in or token is invalid/expired. |
+| `403 Forbidden` | User is authenticated, but access is denied. | Important for authorization checks. |
+| `404 Not Found` | Resource not found. | Check broken links, routes, file paths. |
+| `500 Internal Server Error` | Server-side error. | UI should not show stack traces or technical secrets. |
+
+A status code does not replace a full check. `200 OK` may arrive with wrong data, and `400` may be the correct result for invalid input.
+
+## Data Transfer Protocols
+
+A data transfer protocol is a set of rules for how programs exchange data.
+
+For web testing, HTTP and HTTPS matter most, but it is useful to know other protocols too.
+
+| Protocol | Purpose |
+| --- | --- |
+| HTTP | Transfers web resources, such as HTML documents, API responses, images, and scripts. |
+| HTTPS | HTTP over a secure encrypted connection. Used to protect sensitive data. |
+| FTP | Transfers files between computers over a network. |
+| POP3 | Downloads emails from a mail server to a device. |
+
+## HTTP
+
+HTTP, Hypertext Transfer Protocol, is the foundation of data exchange on the web.
+
+Browsers use HTTP to request resources from servers:
+
+- pages;
+- images;
+- scripts;
+- styles;
+- API data.
+
+## HTTPS
+
+HTTPS is HTTP with a security layer.
+
+The letter `S` means secure. Data between client and server is encrypted, so an attacker cannot easily read login, password, token, or personal data.
+
+QA should check:
+
+- sensitive pages open over HTTPS;
+- HTTP redirects to HTTPS;
+- no mixed content;
+- cookies have secure flags where needed;
+- forms with credentials are not submitted over HTTP.
+
+## FTP And POP3
+
+FTP is used for transferring files.
+
+POP3 is used for receiving emails on a local device.
+
+They are not the foundation of modern browser web apps, but they help show that the client-server model is broader than browser and website only.
 
 ## Types Of Client-Server Architecture
 
@@ -464,8 +576,12 @@ Common mistakes when testing client-server systems:
 | Response | A server answer to a request. |
 | DNS | A service that resolves a domain name to an IP address. |
 | HTTP/HTTPS | Protocols used by browsers to communicate with web servers. |
+| FTP | Protocol for transferring files between computers over a network. |
+| POP3 | Protocol for receiving emails from a mail server. |
+| Status code | Numeric code in a response that shows the result of request processing. |
 | Web server | A server that serves web pages, static files, or responses. |
 | Application server | A server where business logic often lives. |
+| Database | Structured storage for application data. |
 | File server | A server for centralized file storage. |
 | Mail server | A server for sending and receiving emails. |
 | Peer-to-peer | A model where participants can both request and provide services. |
@@ -505,6 +621,14 @@ Clients may lose access to the service, such as being unable to log in or load d
 
 Because UI may show the message incorrectly. QA should also verify the server response, API result, or database state.
 
+### 9. How is HTTP different from HTTPS?
+
+HTTPS uses an encrypted connection, so it better protects sensitive data between client and server.
+
+### 10. Why should QA check status codes, not only UI?
+
+Because status codes show the result of server-side request processing and help distinguish success, redirect, client error, and server error.
+
 ## What To Review Later
 
 - HTTP and HTTPS
@@ -513,5 +637,7 @@ Because UI may show the message incorrectly. QA should also verify the server re
 - API Testing
 - Three-Tier Architecture
 - Status Codes
+- Web Server
+- Cryptography
 - Client-Side Validation
 - Server-Side Validation
