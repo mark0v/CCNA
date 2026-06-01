@@ -127,6 +127,7 @@ nav:
       - Week 05:
           - Week Overview: ccna/articles/2026-05/week-05/index.md
           - 01 - Subnet Mask Defines the Network: ccna/articles/2026-05/week-05/01-subnet-mask-defines-the-network.md
+          - 02 - Private IP Addresses and NAT: ccna/articles/2026-05/week-05/02-private-ip-addresses-and-nat.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
