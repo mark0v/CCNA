@@ -201,6 +201,7 @@ nav:
                   - Experience Based Testing: quality-assurance/overview/testing-theory/test-design-technique/experience-based-testing.md
           - Web Testing:
               - quality-assurance/overview/web-testing/index.md
+              - Web Application Testing Guide: quality-assurance/overview/web-testing/web-application-testing-guide.md
               - Three-Tier Architecture: quality-assurance/overview/web-testing/three-tier-architecture.md
               - Client-Server Architecture: quality-assurance/overview/web-testing/client-server-architecture.md
               - Web Server: quality-assurance/overview/web-testing/web-server.md
