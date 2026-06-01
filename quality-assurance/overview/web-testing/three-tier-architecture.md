@@ -2,54 +2,50 @@
 
 ## Summary
 
-Three-tier architecture is a software application architecture that separates an application into three logical and physical tiers:
+Three-tier architecture - это архитектура приложения, где система разделена на три уровня:
 
 - presentation tier;
 - application tier;
 - data tier.
 
-For QA, this architecture is important because it helps understand where a bug can live:
+Для QA это важно не как сухая теория, а как способ быстрее понимать, где живет defect:
 
-- in the UI;
-- in business logic;
-- in API or backend processing;
-- in the database;
-- in communication between tiers.
+- в UI;
+- в business logic;
+- в API или backend processing;
+- в database;
+- в коммуникации между уровнями.
 
-When QA understands the tiers, testing becomes more precise.
+Когда QA понимает tiers, тестирование становится точнее: мы не просто кликаем экран, а проверяем путь данных через систему.
 
 ## What Is Three-Tier Architecture?
 
-Three-tier architecture organizes an application into three separate parts.
-
-Each tier has its own responsibility and can often run on separate infrastructure.
-
-The three tiers are:
+Three-tier architecture делит приложение на три отдельные части. У каждой части своя ответственность.
 
 | Tier | Main Responsibility |
 | --- | --- |
-| Presentation tier | User interface and user interaction |
-| Application tier | Business logic and processing |
-| Data tier | Data storage and management |
+| Presentation tier | User interface и взаимодействие с пользователем |
+| Application tier | Business logic и обработка данных |
+| Data tier | Хранение и управление данными |
 
-The main benefit is separation of responsibilities.
+Главная идея - separation of responsibilities. UI не должен напрямую работать с database, а database не должна решать, какие business rules применять к пользователю.
 
-Each tier can be developed, scaled, updated, and tested more independently.
+Каждый tier можно разрабатывать, масштабировать, обновлять и тестировать более независимо.
 
 ## Presentation Tier
 
-The presentation tier is the user interface of the application.
+Presentation tier - это пользовательский интерфейс приложения.
 
-This is where the user interacts with the system.
+Именно здесь user взаимодействует с системой.
 
-Examples:
+Примеры:
 
 - web page;
 - mobile application screen;
 - desktop application UI;
 - graphical user interface.
 
-For web applications, the presentation tier is usually built with:
+Для web applications presentation tier обычно состоит из:
 
 - HTML;
 - CSS;
@@ -58,23 +54,21 @@ For web applications, the presentation tier is usually built with:
 
 ## What Presentation Tier Does
 
-The presentation tier:
+Presentation tier:
 
-- displays information to the user;
-- collects user input;
-- validates simple UI behavior;
-- sends user actions to the application tier;
-- shows results, messages, and errors.
+- показывает информацию пользователю;
+- собирает user input;
+- выполняет простую client-side validation;
+- отправляет действия пользователя в application tier;
+- показывает результаты, сообщения и ошибки.
 
-Example:
+Пример:
 
-User enters login and password on a login page.
-
-The UI collects that data and sends it to the backend.
+Пользователь вводит login и password на странице входа. UI собирает эти данные и отправляет request на backend.
 
 ## QA Focus In Presentation Tier
 
-QA should check:
+QA проверяет:
 
 - layout;
 - forms;
@@ -87,28 +81,26 @@ QA should check:
 - error messages;
 - client-side behavior.
 
-Typical bugs:
+Типичные bugs:
 
-- button does not work;
-- text does not fit;
-- validation message is missing;
-- page breaks on mobile;
-- wrong error is shown;
-- UI sends incorrect request payload.
+- button не работает;
+- текст не помещается в блок;
+- validation message не появляется;
+- страница ломается на mobile;
+- показывается неправильная ошибка;
+- UI отправляет неправильный request payload.
 
 ## Application Tier
 
-The application tier is also called:
+Application tier также называют:
 
 - logic tier;
 - middle tier;
 - backend tier.
 
-This tier contains the business logic.
+Это уровень business logic. Он получает данные от presentation tier, обрабатывает их и обращается к data tier.
 
-It processes information from the presentation tier and communicates with the data tier.
-
-Examples of technologies:
+Примеры технологий:
 
 - Python;
 - Java;
@@ -120,23 +112,23 @@ Examples of technologies:
 
 ## What Application Tier Does
 
-The application tier:
+Application tier:
 
-- validates business rules;
-- processes user input;
-- calculates results;
-- applies permissions;
-- handles API requests;
-- creates, updates, or deletes data;
-- communicates with databases and external services.
+- проверяет business rules;
+- обрабатывает user input;
+- выполняет calculations;
+- применяет permissions;
+- обрабатывает API requests;
+- создает, обновляет или удаляет данные;
+- общается с databases и external services.
 
-Example:
+Пример:
 
-When a user places an order, the application tier checks product availability, applies discounts, calculates taxes, creates the order, and asks the payment service to process payment.
+Когда user оформляет order, backend проверяет availability товара, применяет discounts, считает taxes, создает order и отправляет запрос в payment service.
 
 ## QA Focus In Application Tier
 
-QA should check:
+QA проверяет:
 
 - business rules;
 - API behavior;
@@ -148,20 +140,20 @@ QA should check:
 - data processing;
 - backend validation.
 
-Typical bugs:
+Типичные bugs:
 
-- wrong discount calculation;
-- user can access another user's data;
-- API returns incorrect status code;
-- backend accepts invalid data;
-- duplicate order is created;
-- error is not handled correctly.
+- discount считается неправильно;
+- user может увидеть данные другого user;
+- API возвращает неправильный status code;
+- backend принимает invalid data;
+- создается duplicate order;
+- ошибка не обрабатывается корректно.
 
 ## Data Tier
 
-The data tier is where application data is stored and managed.
+Data tier - это уровень, где данные хранятся и управляются.
 
-It can include:
+Он может включать:
 
 - relational databases;
 - NoSQL databases;
@@ -169,7 +161,7 @@ It can include:
 - cache;
 - data warehouses.
 
-Examples:
+Примеры:
 
 - PostgreSQL;
 - MySQL;
@@ -182,7 +174,7 @@ Examples:
 
 ## What Data Tier Does
 
-The data tier:
+Data tier:
 
 - stores data;
 - retrieves data;
@@ -192,50 +184,52 @@ The data tier:
 - supports queries;
 - protects data consistency.
 
-Example:
+Пример:
 
-After an order is created, order details are stored in the database.
+После создания order его details сохраняются в database.
 
 ## QA Focus In Data Tier
 
-QA should check:
+QA проверяет:
 
-- data is saved correctly;
-- data is updated correctly;
-- data is not duplicated;
-- deleted data behaves as expected;
-- database constraints work;
-- data integrity is preserved;
-- migration does not corrupt data;
-- reports use correct data.
+- данные сохраняются корректно;
+- данные обновляются корректно;
+- данные не дублируются;
+- удаление работает ожидаемо;
+- database constraints работают;
+- data integrity сохраняется;
+- migration не портит данные;
+- reports используют правильные данные.
 
-Typical bugs:
+Типичные bugs:
 
-- record is not saved;
-- wrong user data is returned;
-- duplicate rows appear;
-- status is not updated;
-- deleted item still appears;
-- report uses outdated data.
+- record не сохраняется;
+- возвращаются данные неправильного user;
+- появляются duplicate rows;
+- status не обновляется;
+- удаленный item все еще отображается;
+- report использует устаревшие данные.
 
 ## Communication Between Tiers
 
-In a three-tier application, all communication should normally go through the application tier.
+В three-tier application коммуникация обычно идет через application tier.
 
-The presentation tier should not directly talk to the data tier.
+Presentation tier не должен напрямую общаться с data tier.
 
-Typical flow:
+Типичный flow:
 
 ```text
 User Interface -> Application Tier -> Data Tier
 Data Tier -> Application Tier -> User Interface
 ```
 
-This matters because direct UI-to-database communication would create security, maintainability, and scalability problems.
+Это важно для security, maintainability и scalability.
+
+Если UI напрямую ходит в database, становится сложнее контролировать permissions, validation, business rules и изменения схемы данных.
 
 ## Web Development Mapping
 
-In web development, the tiers often look like this:
+В web development tiers часто выглядят так:
 
 | Architecture Tier | Web Example |
 | --- | --- |
@@ -243,51 +237,47 @@ In web development, the tiers often look like this:
 | Application tier | Application server, API, backend service |
 | Data tier | Database server |
 
-Example eCommerce flow:
+Пример eCommerce flow:
 
-1. User adds product to cart in the browser.
-2. Frontend sends request to backend.
-3. Backend checks inventory and pricing.
-4. Backend reads or writes data in database.
-5. Backend sends response to frontend.
-6. UI updates cart state.
+1. User добавляет product в cart в browser.
+2. Frontend отправляет request на backend.
+3. Backend проверяет inventory и pricing.
+4. Backend читает или записывает данные в database.
+5. Backend отправляет response во frontend.
+6. UI обновляет cart state.
 
 ## Benefits
 
 ## Faster Development
 
-Different teams can work on different tiers at the same time.
+Разные команды могут работать над разными tiers параллельно.
 
-Example:
+Пример:
 
-- frontend team builds UI;
-- backend team builds API;
-- database team works on schema and queries;
-- QA prepares tests for each tier.
+- frontend team строит UI;
+- backend team строит API;
+- database team работает со schema и queries;
+- QA готовит проверки для каждого tier.
 
 ## Scalability
 
-Each tier can be scaled independently.
+Каждый tier можно масштабировать отдельно.
 
-Example:
-
-If UI traffic grows, web servers can be scaled.
-
-If database load grows, database resources can be optimized separately.
+Если растет UI traffic, можно масштабировать web servers. Если упираемся в database load, можно отдельно оптимизировать database resources, indexes или queries.
 
 ## Reliability
 
-A problem in one tier may not immediately break everything else if the system is designed well.
+Если система спроектирована хорошо, проблема в одном tier не всегда ломает все приложение.
 
-Example:
+Пример:
 
-If a reporting service has issues, login may still work.
+Если reporting service временно работает плохо, login и базовые user actions могут продолжать работать.
 
 ## Security
 
-The application tier can act as a control point.
+Application tier становится контрольной точкой.
 
-It can:
+Он может:
 
 - validate input;
 - check permissions;
@@ -295,68 +285,68 @@ It can:
 - reduce SQL injection risk;
 - enforce business rules.
 
-The presentation tier and data tier should not communicate directly.
+Presentation tier и data tier не должны общаться напрямую.
 
 ## Tiers Vs Layers
 
-The words tier and layer are often used as if they mean the same thing, but they are different.
+Слова tier и layer часто используют как синонимы, но между ними есть разница.
 
 ## Layer
 
-A layer is a logical division in software design.
+Layer - это логическое разделение кода.
 
-Example:
+Пример:
 
 - UI layer;
 - business logic layer;
 - data access layer.
 
-Layers can exist inside one application running on one machine.
+Layers могут жить внутри одного приложения на одной машине.
 
 ## Tier
 
-A tier is a physical or infrastructure-level separation.
+Tier - это физическое или infrastructure-level разделение.
 
-Example:
+Пример:
 
 - web server;
 - application server;
 - database server.
 
-Each tier can run on separate infrastructure.
+Каждый tier может запускаться на отдельной infrastructure.
 
 ## Why The Difference Matters
 
-Layers organize code.
+Layers организуют code.
 
-Tiers organize runtime deployment.
+Tiers организуют runtime deployment.
 
-Example:
+Пример:
 
-A mobile contacts app may have UI, logic, and data layers, but if all of them run on the phone, it is not a three-tier application.
+Mobile contacts app может иметь UI, logic и data layers, но если все они работают на телефоне, это не three-tier application.
 
 ## Two-Tier Architecture
 
-Two-tier architecture usually has:
+Two-tier architecture обычно состоит из:
 
 - presentation tier;
 - data tier.
 
-Business logic may live in the client, in the database, or partly in both.
+Business logic может находиться в client, database или частично в обоих местах.
 
-In two-tier architecture, the client often has direct access to the data tier.
+В two-tier architecture client часто имеет direct access к data tier.
 
-Example:
+Пример:
 
-A simple desktop application that connects directly to a database.
+Простое desktop application, которое напрямую подключается к database.
 
 ## N-Tier Architecture
 
-N-tier architecture means an application has more than one tier.
+N-tier architecture означает, что приложение имеет больше одного tier.
 
-In practice, it often refers to systems with three or more tiers.
+На практике этим термином часто называют системы с тремя и более tiers.
 
-Additional tiers can include:
+Дополнительные tiers могут включать:
 
 - API gateway;
 - caching tier;
@@ -365,22 +355,22 @@ Additional tiers can include:
 - reporting service;
 - microservices layer.
 
-More tiers can improve separation, but they can also add complexity and latency.
+Больше tiers может улучшить separation, но также добавляет complexity и latency.
 
 ## How This Helps QA
 
-Three-tier architecture helps QA localize defects.
+Three-tier architecture помогает QA локализовать defects.
 
-When something fails, ask:
+Когда что-то ломается, стоит спросить:
 
-- Is the UI sending correct data?
-- Is the API receiving the request?
-- Is business logic processing correctly?
-- Is the database storing correct values?
-- Is the response correct?
-- Is the UI displaying the response correctly?
+- UI отправляет правильные данные?
+- API получает request?
+- Business logic обрабатывает данные правильно?
+- Database сохраняет правильные values?
+- Backend возвращает правильный response?
+- UI правильно отображает response?
 
-This turns vague bug reports into focused investigation.
+Так vague bug report превращается в нормальное investigation.
 
 ## Example Bug Investigation
 
@@ -390,15 +380,15 @@ Bug:
 User applies discount code, but total price is wrong.
 ```
 
-QA can check:
+QA может проверить:
 
-1. Presentation tier: Did frontend send the discount code?
-2. Application tier: Did backend apply correct business rules?
-3. Data tier: Is discount configuration correct in database?
-4. Response: Did backend return correct total?
-5. UI: Did frontend display returned total correctly?
+1. Presentation tier: frontend отправил discount code?
+2. Application tier: backend применил правильные business rules?
+3. Data tier: discount configuration в database корректная?
+4. Response: backend вернул правильный total?
+5. UI: frontend правильно показал returned total?
 
-This tier-based thinking helps identify the real source of the defect.
+Tier-based thinking помогает найти настоящий источник defect.
 
 ## Common Testing Areas
 
@@ -411,33 +401,51 @@ This tier-based thinking helps identify the real source of the defect.
 
 ## Common Mistakes
 
-Common mistakes:
+Частые ошибки:
 
-- testing only UI and ignoring backend behavior;
-- assuming every UI bug is a frontend bug;
-- not checking request payloads;
-- not checking database state;
-- not testing error handling between tiers;
-- ignoring authorization in the application tier;
-- not testing data consistency after updates.
+- тестировать только UI и игнорировать backend behavior;
+- считать, что каждый UI bug - это frontend bug;
+- не проверять request payloads;
+- не проверять database state;
+- не тестировать error handling между tiers;
+- игнорировать authorization в application tier;
+- не проверять data consistency после updates.
 
 ## Key Idea
 
-Three-tier architecture separates UI, business logic, and data storage.
+Three-tier architecture разделяет UI, business logic и data storage.
 
-For QA, this separation makes testing and debugging much clearer.
+Для QA это разделение делает testing и debugging намного понятнее.
 
 Главная мысль:
 
-> When you understand the tiers, you can test the system instead of just clicking the screen.
+> Когда ты понимаешь tiers, ты тестируешь систему, а не просто кликаешь экран.
 
 ## Questions
 
-1. What are the three tiers in three-tier architecture?
-2. What does the presentation tier do?
-3. What does the application tier do?
-4. Why should the presentation tier not talk directly to the data tier?
-5. What is the difference between layer and tier?
+### 1. Какие три уровня есть в three-tier architecture?
+
+Presentation tier, application tier и data tier.
+
+### 2. За что отвечает presentation tier?
+
+За user interface: отображение данных, сбор user input, client-side behavior и передачу действий пользователя в backend.
+
+### 3. За что отвечает application tier?
+
+За business logic, API behavior, validation, permissions, calculations и связь с database или external services.
+
+### 4. Почему presentation tier не должен напрямую обращаться к data tier?
+
+Потому что это ухудшает security, maintainability и control over business rules. Доступ к данным должен проходить через application tier.
+
+### 5. Чем tier отличается от layer?
+
+Layer - логическое разделение кода. Tier - физическое или infrastructure-level разделение runtime частей системы.
+
+### 6. Как QA может использовать three-tier thinking при анализе bug?
+
+QA может пройти цепочку UI -> API -> backend logic -> database -> response -> UI и понять, на каком уровне появляется ошибка.
 
 ## What To Review Later
 
