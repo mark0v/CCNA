@@ -202,6 +202,7 @@ nav:
           - Web Testing:
               - quality-assurance/overview/web-testing/index.md
               - Three-Tier Architecture: quality-assurance/overview/web-testing/three-tier-architecture.md
+              - Client-Server Architecture: quality-assurance/overview/web-testing/client-server-architecture.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
