@@ -199,7 +199,9 @@ nav:
                   - Use Case Testing: quality-assurance/overview/testing-theory/test-design-technique/use-case-testing.md
                   - Pairwise Testing: quality-assurance/overview/testing-theory/test-design-technique/pairwise-testing.md
                   - Experience Based Testing: quality-assurance/overview/testing-theory/test-design-technique/experience-based-testing.md
-          - Web Testing: quality-assurance/overview/02-web-testing.md
+          - Web Testing:
+              - quality-assurance/overview/web-testing/index.md
+              - Three-Tier Architecture: quality-assurance/overview/web-testing/three-tier-architecture.md
           - API Testing: quality-assurance/overview/03-api-testing.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
