@@ -224,12 +224,24 @@ nav:
               - Three-Tier Architecture: quality-assurance/overview/web-testing/three-tier-architecture.md
               - Client-Server Architecture: quality-assurance/overview/web-testing/client-server-architecture.md
               - Web Server: quality-assurance/overview/web-testing/web-server.md
+              - Apache Vs Nginx: quality-assurance/overview/web-testing/apache-vs-nginx.md
+              - Docker Basics For QA: quality-assurance/overview/web-testing/docker-basics-for-qa.md
               - HTTP Status Codes: quality-assurance/overview/web-testing/http-status-codes.md
               - HTTP Headers: quality-assurance/overview/web-testing/http-headers.md
+              - Chrome DevTools For Web Testing: quality-assurance/overview/web-testing/chrome-devtools-for-web-testing.md
+              - Cross Browser Testing: quality-assurance/overview/web-testing/cross-browser-testing.md
+              - Browser Rendering Engines: quality-assurance/overview/web-testing/browser-rendering-engines.md
+              - HTML And CSS Fundamentals: quality-assurance/overview/web-testing/html-css-fundamentals.md
+              - Responsive Design Testing: quality-assurance/overview/web-testing/responsive-design-testing.md
+              - Web Design Tools For QA: quality-assurance/overview/web-testing/web-design-tools-for-qa.md
+              - Performance And Load Testing Tools: quality-assurance/overview/web-testing/performance-load-testing-tools.md
+              - Website Performance Factors And Tools: quality-assurance/overview/web-testing/website-performance-factors-and-tools.md
+              - OWASP Top 10 2025 For QA: quality-assurance/overview/web-testing/owasp-top-10-2025-for-qa.md
               - PUT Vs PATCH: quality-assurance/overview/web-testing/put-vs-patch.md
               - Cryptography: quality-assurance/overview/web-testing/cryptography.md
               - Microservices: quality-assurance/overview/web-testing/microservices.md
-          - API Testing: quality-assurance/overview/03-api-testing.md
+          - API Testing:
+              - quality-assurance/overview/api-testing/index.md
           - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md

@@ -21,7 +21,7 @@
 |---|------|-------------|-----------|------|
 | 1 | Теория тестирования | 🟡 Частично | ⭐⭐⭐ Высокий | [testing-theory/index.md](testing-theory/index.md) |
 | 2 | Web тестирование | 🟡 Частично | ⭐⭐⭐ Высокий | [web-testing/index.md](web-testing/index.md) |
-| 3 | API тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [03-api-testing.md](03-api-testing.md) |
+| 3 | API тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [api-testing/index.md](api-testing/index.md) |
 | 4 | Mobile тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [04-mobile-testing.md](04-mobile-testing.md) |
 | 5 | Базы данных / SQL | 🟡 Частично | ⭐⭐ Средний | [05-database-testing.md](05-database-testing.md) |
 | 6 | Performance тестирование | 🔴 Пробел | ⭐⭐ Средний | [06-performance-testing.md](06-performance-testing.md) |
