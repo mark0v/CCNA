@@ -143,6 +143,7 @@ nav:
           - Week Overview: ccna/articles/2026-06/week-06/index.md
           - 01 - Static Routing Basics: ccna/articles/2026-06/week-06/01-static-routing-basics.md
           - 02 - Default Routing: ccna/articles/2026-06/week-06/02-default-routing.md
+          - 03 - Dynamic Routing With EIGRP: ccna/articles/2026-06/week-06/03-dynamic-routing-with-eigrp.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
