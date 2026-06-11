@@ -281,6 +281,7 @@ nav:
               - Stress Testing Guide: quality-assurance/overview/06-performance-testing/stress-testing-guide.md
               - Stability And Soak Testing Guide: quality-assurance/overview/06-performance-testing/stability-soak-testing-guide.md
               - Configuration Testing Guide: quality-assurance/overview/06-performance-testing/configuration-testing-guide.md
+              - Load Model Design: quality-assurance/overview/06-performance-testing/load-model-design.md
           - Automation: quality-assurance/overview/07-automation.md
           - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md
           - Flashcards QA Interview: quality-assurance/overview/flashcards-qa-interview.md
