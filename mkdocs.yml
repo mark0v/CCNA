@@ -264,6 +264,7 @@ nav:
               - iOS File System And Storage: quality-assurance/overview/04-mobile-testing/ios-file-system-and-storage.md
               - Android File System And Storage: quality-assurance/overview/04-mobile-testing/android-file-system-and-storage.md
               - Emulators Simulators And Real Devices: quality-assurance/overview/04-mobile-testing/emulators-simulators-real-devices.md
+              - Android Developer Options For QA: quality-assurance/overview/04-mobile-testing/android-developer-options-for-qa.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md
           - Automation: quality-assurance/overview/07-automation.md
