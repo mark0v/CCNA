@@ -260,6 +260,7 @@ nav:
               - Web Services Architecture: quality-assurance/overview/api-testing/web-services-architecture.md
           - Mobile Testing:
               - quality-assurance/overview/04-mobile-testing/index.md
+              - Mobile App Types: quality-assurance/overview/04-mobile-testing/mobile-app-types.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md
           - Automation: quality-assurance/overview/07-automation.md
