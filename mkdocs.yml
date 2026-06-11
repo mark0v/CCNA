@@ -272,6 +272,7 @@ nav:
           - Database Testing:
               - quality-assurance/overview/05-database-testing/index.md
               - Types Of Databases: quality-assurance/overview/05-database-testing/types-of-databases.md
+              - MongoDB Vs PostgreSQL: quality-assurance/overview/05-database-testing/mongodb-vs-postgresql.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md
           - Automation: quality-assurance/overview/07-automation.md
           - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md
