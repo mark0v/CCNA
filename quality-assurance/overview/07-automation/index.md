@@ -1,5 +1,8 @@
 # 🤖 07 — Автоматизация тестирования & CI/CD
 
+Language: Russian
+Translation pair: quality-assurance-en/overview/07-automation/index.md
+
 > **Твой уровень:** 🔴 ПРОБЕЛ (Git — Not Started; CI — Familiar with; Automation — не в матрице)  
 > **Приоритет:** ⭐ НАЧАЛЬНЫЙ (для Junior достаточно понимания основ)
 

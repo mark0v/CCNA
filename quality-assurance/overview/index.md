@@ -25,7 +25,7 @@
 | 4 | Mobile тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [04-mobile-testing/index.md](04-mobile-testing/index.md) |
 | 5 | Базы данных / SQL | 🟡 Частично | ⭐⭐ Средний | [05-database-testing/index.md](05-database-testing/index.md) |
 | 6 | Performance тестирование | 🔴 Пробел | ⭐⭐ Средний | [06-performance-testing/index.md](06-performance-testing/index.md) |
-| 7 | Автоматизация | 🔴 Пробел | ⭐ Начальный | [07-automation.md](07-automation.md) |
+| 7 | Автоматизация | 🔴 Пробел | ⭐ Начальный | [07-automation/index.md](07-automation/index.md) |
 
 ---
 
