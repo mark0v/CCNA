@@ -23,7 +23,7 @@
 | 2 | Web тестирование | 🟡 Частично | ⭐⭐⭐ Высокий | [web-testing/index.md](web-testing/index.md) |
 | 3 | API тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [api-testing/index.md](api-testing/index.md) |
 | 4 | Mobile тестирование | 🔴 Пробел | ⭐⭐⭐ Высокий | [04-mobile-testing/index.md](04-mobile-testing/index.md) |
-| 5 | Базы данных / SQL | 🟡 Частично | ⭐⭐ Средний | [05-database-testing.md](05-database-testing.md) |
+| 5 | Базы данных / SQL | 🟡 Частично | ⭐⭐ Средний | [05-database-testing/index.md](05-database-testing/index.md) |
 | 6 | Performance тестирование | 🔴 Пробел | ⭐⭐ Средний | [06-performance-testing.md](06-performance-testing.md) |
 | 7 | Автоматизация | 🔴 Пробел | ⭐ Начальный | [07-automation.md](07-automation.md) |
 

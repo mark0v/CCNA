@@ -269,7 +269,9 @@ nav:
               - Emulators Simulators And Real Devices: quality-assurance/overview/04-mobile-testing/emulators-simulators-real-devices.md
               - Android Developer Options For QA: quality-assurance/overview/04-mobile-testing/android-developer-options-for-qa.md
               - Android Logcat For QA: quality-assurance/overview/04-mobile-testing/android-logcat-for-qa.md
-          - Database Testing: quality-assurance/overview/05-database-testing.md
+          - Database Testing:
+              - quality-assurance/overview/05-database-testing/index.md
+              - Types Of Databases: quality-assurance/overview/05-database-testing/types-of-databases.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md
           - Automation: quality-assurance/overview/07-automation.md
           - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md

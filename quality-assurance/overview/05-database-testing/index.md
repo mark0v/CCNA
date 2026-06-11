@@ -1,5 +1,8 @@
 # 🗄️ 05 — Базы данных и SQL
 
+Language: Russian  
+Translation pair: quality-assurance-en/overview/05-database-testing/index.md
+
 > **Твой уровень:** 🟡 Частично (SELECT/DELETE — Familiar with; JOINs/INSERT/UPDATE — 🔴 ПРОБЕЛ)  
 > **Приоритет:** ⭐⭐ СРЕДНИЙ
 
