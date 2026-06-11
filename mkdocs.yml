@@ -287,6 +287,7 @@ nav:
               - quality-assurance/overview/07-automation/index.md
               - Git Commands Cheat Sheet: quality-assurance/overview/07-automation/git-command-cheat-sheet.md
               - CI/CD For QA: quality-assurance/overview/07-automation/ci-cd-for-qa.md
+              - Docker For Test Automation: quality-assurance/overview/07-automation/docker-for-test-automation.md
           - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md
           - Flashcards QA Interview: quality-assurance/overview/flashcards-qa-interview.md
           - Quiz QA Interview: quality-assurance/overview/quiz-qa-interview.md
