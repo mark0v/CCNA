@@ -1,6 +1,6 @@
 # Эмуляторы, симуляторы и реальные устройства
 
-Source: user-provided comparison supplemented with official Android and Apple documentation  
+Source: user-provided comparisons supplemented with official Android and Apple documentation  
 Date added: 2026-06-11  
 Related plan item: Mobile Testing  
 Tags: QA, mobile testing, emulator, simulator, real devices, Android, iOS  
@@ -40,6 +40,30 @@ Emulator, simulator и physical device — это разные test environments
 | Real device | Настоящий phone or tablet |
 
 Не следует выбирать environment только по названию. Важнее знать его capabilities and limitations.
+
+## Что общего у Simulator и Emulator
+
+Оба являются software-defined test environments и помогают:
+
+- запускать tests без отдельного physical device;
+- быстро менять OS version and device profile;
+- сбрасывать environment в известное состояние;
+- создавать repeatable test data and conditions;
+- запускать tests параллельно;
+- расширять coverage в CI;
+- собирать screenshots, logs and diagnostics.
+
+Их главное преимущество — controllability. QA может воспроизвести одну и ту же configuration много раз, что сложнее обеспечить на постоянно используемом physical device.
+
+При этом virtual environment может отличаться от реального устройства не только hardware, но и:
+
+- installed applications;
+- user accounts;
+- background processes;
+- carrier configuration;
+- manufacturer services;
+- accumulated storage and cache;
+- long-term device state.
 
 ## iOS Simulator
 
@@ -192,6 +216,8 @@ Do not rely only on Simulator for:
 - production signing;
 - App Store build behavior.
 
+Simulator особенно удобен, если test focus находится на interaction между application screens, mocked services or other software-controlled behavior, а hardware fidelity не влияет на expected result.
+
 ## What To Test In Emulator
 
 Good candidates:
@@ -218,6 +244,25 @@ adb logcat
 ```
 
 Do not treat emulator benchmark results as equivalent to physical-device performance.
+
+Emulator подходит для controlled hardware-like configurations, но не гарантирует точное воспроизведение конкретного chipset, driver, firmware or manufacturer customization.
+
+Например, изменение virtual RAM полезно для поиска memory-sensitive defects, но не доказывает, что application одинаково поведёт себя на physical phones с тем же заявленным объёмом памяти.
+
+## Как выбрать среду для конкретного теста
+
+| Test goal | Preferred starting environment | Final confirmation |
+| --- | --- | --- |
+| UI layout and validation | Simulator or emulator | Priority real screens |
+| Business logic | Simulator/emulator with controlled data | Real-device smoke |
+| OS/API compatibility | Emulator or simulator runtime | Representative devices |
+| Hardware integration | Emulator for early checks | Real device |
+| Performance and battery | Virtual device for obvious regressions | Real device required |
+| Network error handling | Controlled virtual profile | Real network transitions |
+| Store installation and signing | Limited virtual checks | Store-distributed real device |
+| Broad automated regression | Virtual devices in CI | Physical device farm subset |
+
+Environment should be chosen per risk, not once for the entire project.
 
 ## What Requires Real Devices
 
@@ -333,6 +378,15 @@ A practical pipeline:
 4. Smoke on physical device farm.
 5. Release candidate testing on priority real devices.
 
+Real-device testing should not always wait until the final day before release. Hardware-critical and high-risk flows should run on representative devices earlier so that platform-specific defects are not discovered too late.
+
+A balanced strategy:
+
+- virtual devices on every change or pull request;
+- physical-device smoke on regular builds;
+- broader device-farm regression before release;
+- exploratory testing on locally held devices for real-world behavior.
+
 Cloud device farms provide access to real devices, but QA should still understand:
 
 - session limits;
@@ -381,6 +435,8 @@ This is a starting point, not a universal rule.
 - notification works on emulator but fails with production signing;
 - simulator does not reveal safe-area or keyboard behavior seen on device;
 - test suite depends on state left in an AVD snapshot.
+- issue reproduces only in an unrealistically clean virtual environment and misses migration from long-used devices;
+- physical-device defect is discovered late because all earlier coverage was virtual.
 
 ## Bug Report Tips
 
@@ -434,6 +490,14 @@ Answer: Финальные performance conclusions следует делать �
 ### 5. Как выбрать реальные устройства?
 
 Answer: По supported OS, analytics, manufacturers, hardware tiers, screen sizes and product risks.
+
+### 6. В чём общее преимущество emulator and simulator?
+
+Answer: Они дают controlled, repeatable and scalable environments, которые удобно сбрасывать и запускать в automation.
+
+### 7. Нужно ли откладывать real-device testing до конца release cycle?
+
+Answer: Нет. Critical hardware and platform scenarios следует проверять на physical devices регулярно, а не только перед release.
 
 ## What To Review Later
 
