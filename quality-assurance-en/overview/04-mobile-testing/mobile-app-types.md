@@ -1,6 +1,6 @@
 # Mobile App Types For QA
 
-Source: pasted article comparing web, native, cross-platform, hybrid, and wrapper apps  
+Source: pasted articles comparing mobile application types and technologies  
 Date added: 2026-06-11  
 Related plan item: Mobile Testing  
 Tags: QA, mobile testing, native, hybrid, cross-platform, PWA, mobile web  
@@ -236,6 +236,112 @@ QA focus:
 | Hybrid | Native shell + WebView | Yes | Web inside native container | Through plugins | Web/native integration |
 | Wrapper | Native shell + existing web content | Yes | Mostly existing web UI | Through added native layer | Remote content and shell integration |
 
+## Distribution, Updates, And Storage
+
+The application type affects not only development but also the delivery process.
+
+| Type | Distribution | Updates | Device storage |
+| --- | --- | --- | --- |
+| Mobile web | URL/browser | Immediately on server deployment | Browser cache and site data |
+| PWA | Browser/home-screen installation | Web deployment plus service worker update cycle | Cache, storage, and offline assets |
+| Native | App Store, Google Play, or enterprise distribution | New build, review, and user/device rollout | Installed application and local data |
+| Cross-platform | Same as native | New platform builds, sometimes a shared release | Installed application and local data |
+| Hybrid/wrapper | Stores or enterprise distribution | Native shell update and/or remote web update | Native package, WebView cache, and local data |
+
+QA should determine:
+
+- whether a change requires a new store build;
+- whether web content can change without an app update;
+- how forced or phased updates work;
+- whether data and sessions survive an update;
+- how a service worker or WebView cache receives a new version;
+- what happens during rollback.
+
+## How To Choose An Approach
+
+Technology choice depends on product requirements, not only cost or development speed.
+
+| Requirement | Usually consider |
+| --- | --- |
+| Fast public access without installation | Mobile web |
+| Installable web experience with limited offline support | PWA |
+| Maximum hardware and platform API access | Native |
+| Shared code with rich mobile UI | Cross-platform |
+| Existing web team and WebView-based product | Hybrid |
+| Existing website reused inside a store app | Wrapper |
+
+Additional questions:
+
+- How critical is performance?
+- Which device capabilities are required?
+- Must the application work offline?
+- Are App Store and Google Play distribution required?
+- How frequently are updates released?
+- Which minimum OS versions are supported?
+- Is there an existing web codebase?
+- Is identical feature coverage required on both platforms?
+
+No answer guarantees one correct architecture. A product can combine approaches, such as a native shell with individual WebView screens.
+
+## Classification By Function
+
+Technology type describes implementation. Applications can also be classified by business functionality.
+
+| Category | Typical QA focus |
+| --- | --- |
+| Social and messaging | Notifications, feeds, privacy, media upload, realtime delivery |
+| Entertainment and streaming | Playback, DRM, bandwidth, background mode, downloads |
+| Utility | Permissions, widgets, background tasks, device integration |
+| Gaming | Performance, graphics, state saving, purchases, multiplayer |
+| E-commerce | Catalog, cart, payment, delivery, deep links |
+| Health and fitness | Sensors, permissions, sensitive data, background tracking |
+| Education | Progress sync, downloads, quizzes, media, and accessibility |
+| Finance | Authentication, security, transactions, audit, and masking |
+| Travel and navigation | Location, maps, offline data, time zones, and roaming |
+| Business/productivity | Roles, synchronization, files, collaboration, and enterprise policies |
+
+This classification affects risk-based testing. For example, security and transaction integrity matter more than animation quality in a finance app, while playback and network transitions are critical in a streaming app.
+
+## Classification By Audience
+
+### B2C
+
+Consumer applications commonly require:
+
+- intuitive onboarding;
+- broad device coverage;
+- accessibility;
+- analytics;
+- store ratings and reviews;
+- localization;
+- peak-load readiness.
+
+### B2B
+
+Business applications commonly require:
+
+- complex roles;
+- enterprise integrations;
+- data export;
+- security policies;
+- managed devices;
+- audit logs;
+- backward compatibility.
+
+### Internal Apps
+
+Internal applications may be distributed through enterprise tools instead of public stores.
+
+QA focus:
+
+- SSO;
+- VPN and corporate network;
+- MDM policies;
+- device enrollment;
+- restricted distribution;
+- company-specific workflows;
+- remote wipe and access revocation.
+
 ## How To Identify The App Type
 
 Ask the team:
@@ -307,6 +413,8 @@ Do not identify architecture only by appearance. A polished WebView may look nat
 - mobile web layout breaks when the keyboard opens;
 - wrapper app opens internal links in an external browser;
 - app update removes local user data;
+- service worker keeps an old PWA version after deployment;
+- remote web release breaks a wrapper without changing its store build;
 - permission denial causes endless loading.
 
 ## Bug Report Tips
@@ -339,6 +447,9 @@ Include:
 | Bridge | Communication layer between web/framework code and native APIs. |
 | Service worker | Browser worker used for cache, offline behavior, and background tasks. |
 | Feature parity | Equivalent functionality across supported platforms. |
+| MDM | Mobile Device Management used to control enterprise devices and apps. |
+| Phased rollout | Gradual release of an application update to part of the audience. |
+| Forced update | Application blocks or limits use until a required version is installed. |
 
 ## Questions
 
@@ -362,6 +473,14 @@ Answer: At the boundary between the WebView, native shell, and plugins.
 
 Answer: OS behavior, native components, permissions, plugins, and lifecycle remain platform-specific.
 
+### 6. Why does the update mechanism matter to QA?
+
+Answer: Web, PWA, and store applications receive changes differently, creating different cache, compatibility, migration, and rollback risks.
+
+### 7. Does the business category affect the testing strategy?
+
+Answer: Yes. Finance, gaming, health, streaming, and business applications have different critical workflows and risks.
+
 ## What To Review Later
 
 - Android and iOS application lifecycle.
@@ -370,3 +489,5 @@ Answer: OS behavior, native components, permissions, plugins, and lifecycle rema
 - Mobile permissions.
 - Device and OS coverage matrix.
 - Installation and update testing.
+- Store, enterprise, and phased distribution.
+- B2C, B2B, and internal mobile applications.
