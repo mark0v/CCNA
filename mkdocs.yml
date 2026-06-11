@@ -285,6 +285,7 @@ nav:
               - Website Performance Testing: quality-assurance/overview/06-performance-testing/website-performance-testing.md
           - Automation:
               - quality-assurance/overview/07-automation/index.md
+              - Git Commands Cheat Sheet: quality-assurance/overview/07-automation/git-command-cheat-sheet.md
           - Interview Cheatsheet: quality-assurance/overview/interview-cheatsheet.md
           - Flashcards QA Interview: quality-assurance/overview/flashcards-qa-interview.md
           - Quiz QA Interview: quality-assurance/overview/quiz-qa-interview.md
