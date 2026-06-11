@@ -1,5 +1,8 @@
 # ⚡ 06 — Performance тестирование
 
+Language: Russian  
+Translation pair: quality-assurance-en/overview/06-performance-testing/index.md
+
 > **Твой уровень:** 🔴 КРИТИЧЕСКИЙ ПРОБЕЛ (все подтемы Not Started в матрице и IDP)  
 > **Приоритет:** ⭐⭐ СРЕДНИЙ
 
