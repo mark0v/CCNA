@@ -255,7 +255,11 @@ nav:
               - Microservices: quality-assurance/overview/web-testing/microservices.md
           - API Testing:
               - quality-assurance/overview/api-testing/index.md
-          - Mobile Testing: quality-assurance/overview/04-mobile-testing.md
+              - SOAP Vs REST: quality-assurance/overview/api-testing/soap-vs-rest.md
+              - API Testing Interview Questions: quality-assurance/overview/api-testing/api-testing-interview-questions.md
+              - Web Services Architecture: quality-assurance/overview/api-testing/web-services-architecture.md
+          - Mobile Testing:
+              - quality-assurance/overview/04-mobile-testing/index.md
           - Database Testing: quality-assurance/overview/05-database-testing.md
           - Performance Testing: quality-assurance/overview/06-performance-testing.md
           - Automation: quality-assurance/overview/07-automation.md
