@@ -261,6 +261,7 @@ nav:
           - Mobile Testing:
               - quality-assurance/overview/04-mobile-testing/index.md
               - Mobile App Types: quality-assurance/overview/04-mobile-testing/mobile-app-types.md
+              - Types Of Mobile Testing: quality-assurance/overview/04-mobile-testing/types-of-mobile-testing.md
               - iOS File System And Storage: quality-assurance/overview/04-mobile-testing/ios-file-system-and-storage.md
               - Android File System And Storage: quality-assurance/overview/04-mobile-testing/android-file-system-and-storage.md
               - Emulators Simulators And Real Devices: quality-assurance/overview/04-mobile-testing/emulators-simulators-real-devices.md
