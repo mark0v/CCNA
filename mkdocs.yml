@@ -154,6 +154,7 @@ nav:
           - 11 - Configuring Static NAT: ccna/articles/2026-06/week-06/11-configuring-static-nat.md
       - Week 07:
           - Week Overview: ccna/articles/2026-06/week-07/index.md
+          - 01 - Configuring Dynamic NAT: ccna/articles/2026-06/week-07/01-configuring-dynamic-nat.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
