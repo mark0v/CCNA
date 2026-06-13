@@ -155,6 +155,7 @@ nav:
       - Week 07:
           - Week Overview: ccna/articles/2026-06/week-07/index.md
           - 01 - Configuring Dynamic NAT: ccna/articles/2026-06/week-07/01-configuring-dynamic-nat.md
+          - 02 - Configuring PAT (NAT Overload): ccna/articles/2026-06/week-07/02-configuring-pat-nat-overload.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
