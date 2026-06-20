@@ -176,6 +176,7 @@ nav:
           - 04 - VLANs, Broadcast Domains, And Trunks: ccna/articles/2026-06/week-08/04-vlans-broadcast-domains-and-trunks.md
           - 05 - Creating VLANs And Access Ports: ccna/articles/2026-06/week-08/05-creating-vlans-and-access-ports.md
           - 06 - Configuring VLAN Trunks: ccna/articles/2026-06/week-08/06-configuring-vlan-trunks.md
+          - 07 - Router-On-A-Stick Inter-VLAN Routing: ccna/articles/2026-06/week-08/07-router-on-a-stick-inter-vlan-routing.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
