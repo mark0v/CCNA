@@ -190,6 +190,7 @@ nav:
           - 04 - Redundant Switch Links And Broadcast Storms: ccna/articles/2026-06/week-09/04-redundant-switch-links-and-broadcast-storms.md
           - 05 - Spanning Tree Vocabulary: ccna/articles/2026-06/week-09/05-spanning-tree-vocabulary.md
           - 06 - Three Steps To Map Spanning Tree: ccna/articles/2026-06/week-09/06-three-steps-to-map-spanning-tree.md
+          - 07 - Classic STP Timers, PVST, And Root Bridge Control: ccna/articles/2026-06/week-09/07-classic-stp-timers-pvst-and-root-bridge.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
