@@ -193,6 +193,7 @@ nav:
           - 07 - Classic STP Timers, PVST, And Root Bridge Control: ccna/articles/2026-06/week-09/07-classic-stp-timers-pvst-and-root-bridge.md
           - 08 - Rapid Spanning Tree And MST: ccna/articles/2026-06/week-09/08-rapid-spanning-tree-and-mst.md
           - 09 - PortFast And BPDU Guard: ccna/articles/2026-06/week-09/09-portfast-and-bpdu-guard.md
+          - 10 - Spanning Tree Implementation Checklist: ccna/articles/2026-06/week-09/10-spanning-tree-implementation-checklist.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
