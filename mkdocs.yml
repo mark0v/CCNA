@@ -203,6 +203,7 @@ nav:
           - 05 - EtherChannel Load Balancing: ccna/articles/2026-07/week-10/05-etherchannel-load-balancing.md
           - 06 - EtherChannel Deployment Checklist: ccna/articles/2026-07/week-10/06-etherchannel-deployment-checklist.md
           - 07 - STP And EtherChannel Design Takeaways: ccna/articles/2026-07/week-10/07-stp-and-etherchannel-design-takeaways.md
+          - 08 - Why Static Routing Does Not Scale: ccna/articles/2026-07/week-10/08-why-static-routing-does-not-scale.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
