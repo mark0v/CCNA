@@ -215,6 +215,7 @@ nav:
           - 06 - Scaling OSPF With Areas And Default Routes: ccna/articles/2026-07/week-11/06-scaling-ospf-with-areas-and-default-routes.md
           - 07 - From Routing Resiliency To Gateway Resiliency: ccna/articles/2026-07/week-11/07-from-routing-resiliency-to-gateway-resiliency.md
           - 08 - Why First Hop Redundancy Matters: ccna/articles/2026-07/week-11/08-why-first-hop-redundancy-matters.md
+          - 09 - FHRP Virtual IP And Virtual MAC: ccna/articles/2026-07/week-11/09-fhrp-virtual-ip-and-virtual-mac.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
