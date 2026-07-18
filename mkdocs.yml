@@ -220,6 +220,7 @@ nav:
       - Week 12:
           - Week Overview: ccna/articles/2026-07/week-12/index.md
           - 01 - Configuring HSRP With Failover Testing: ccna/articles/2026-07/week-12/01-configuring-hsrp-with-failover-testing.md
+          - 02 - Why HSRP Redundancy Matters: ccna/articles/2026-07/week-12/02-why-hsrp-redundancy-matters.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
