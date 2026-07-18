@@ -219,6 +219,7 @@ nav:
           - 10 - Choosing Between HSRP VRRP And GLBP: ccna/articles/2026-07/week-11/10-choosing-between-hsrp-vrrp-and-glbp.md
       - Week 12:
           - Week Overview: ccna/articles/2026-07/week-12/index.md
+          - 01 - Configuring HSRP With Failover Testing: ccna/articles/2026-07/week-12/01-configuring-hsrp-with-failover-testing.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
