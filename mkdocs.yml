@@ -231,6 +231,7 @@ nav:
           - 10 - ACLs Are A Tool, Not A Thing: ccna/articles/2026-07/week-12/10-acls-are-a-tool-not-a-thing.md
       - Week 13:
           - Week Overview: ccna/articles/2026-07/week-13/index.md
+          - 01 - Standard ACLs Safe Configuration And Placement: ccna/articles/2026-07/week-13/01-standard-acls-safe-configuration-and-placement.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
