@@ -232,6 +232,7 @@ nav:
       - Week 13:
           - Week Overview: ccna/articles/2026-07/week-13/index.md
           - 01 - Standard ACLs Safe Configuration And Placement: ccna/articles/2026-07/week-13/01-standard-acls-safe-configuration-and-placement.md
+          - 02 - Extended ACLs Protocol Source Destination: ccna/articles/2026-07/week-13/02-extended-acls-protocol-source-destination.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
