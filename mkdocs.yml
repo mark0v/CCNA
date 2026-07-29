@@ -235,6 +235,7 @@ nav:
           - 02 - Extended ACLs Protocol Source Destination: ccna/articles/2026-07/week-13/02-extended-acls-protocol-source-destination.md
           - 03 - Applying ACLs To Real Network Requirements: ccna/articles/2026-07/week-13/03-applying-acls-to-real-network-requirements.md
           - 04 - ACLs As Reusable Traffic Classifiers: ccna/articles/2026-07/week-13/04-acls-as-reusable-traffic-classifiers.md
+          - 05 - Network Security Starts With Threat Modeling: ccna/articles/2026-07/week-13/05-network-security-starts-with-threat-modeling.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
