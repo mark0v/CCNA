@@ -251,6 +251,7 @@ nav:
           - 05 - Access Switch Security Baseline: ccna/articles/2026-08/week-14/05-access-switch-security-baseline.md
           - 06 - CDP And LLDP Network Discovery: ccna/articles/2026-08/week-14/06-cdp-and-lldp-network-discovery.md
           - 07 - CDP One-Hop Cisco Discovery: ccna/articles/2026-08/week-14/07-cdp-one-hop-cisco-discovery.md
+          - 08 - LLDP Standard Neighbor Discovery: ccna/articles/2026-08/week-14/08-lldp-standard-neighbor-discovery.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
