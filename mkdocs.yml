@@ -249,6 +249,7 @@ nav:
           - 03 - Dynamic ARP Inspection With DHCP Snooping: ccna/articles/2026-08/week-14/03-dynamic-arp-inspection-with-dhcp-snooping.md
           - 04 - Layer 2 Security Policy Rollout: ccna/articles/2026-08/week-14/04-layer-2-security-policy-rollout.md
           - 05 - Access Switch Security Baseline: ccna/articles/2026-08/week-14/05-access-switch-security-baseline.md
+          - 06 - CDP And LLDP Network Discovery: ccna/articles/2026-08/week-14/06-cdp-and-lldp-network-discovery.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
