@@ -258,6 +258,7 @@ nav:
           - 01 - Core Network Services NTP DHCP DNS: ccna/articles/2026-08/week-15/01-core-network-services-ntp-dhcp-dns.md
           - 02 - Manual Cisco Clock And Time Zones: ccna/articles/2026-08/week-15/02-manual-cisco-clock-and-time-zones.md
           - 03 - NTP Synchronization And Stratum: ccna/articles/2026-08/week-15/03-ntp-synchronization-and-stratum.md
+          - 04 - DNS Name Resolution And Cisco Devices: ccna/articles/2026-08/week-15/04-dns-name-resolution-and-cisco-devices.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
