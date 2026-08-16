@@ -253,6 +253,8 @@ nav:
           - 07 - CDP One-Hop Cisco Discovery: ccna/articles/2026-08/week-14/07-cdp-one-hop-cisco-discovery.md
           - 08 - LLDP Standard Neighbor Discovery: ccna/articles/2026-08/week-14/08-lldp-standard-neighbor-discovery.md
           - 09 - CDP LLDP Discovery Workflow: ccna/articles/2026-08/week-14/09-cdp-lldp-discovery-workflow.md
+      - Week 15:
+          - Week Overview: ccna/articles/2026-08/week-15/index.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
