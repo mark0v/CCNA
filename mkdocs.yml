@@ -256,6 +256,7 @@ nav:
       - Week 15:
           - Week Overview: ccna/articles/2026-08/week-15/index.md
           - 01 - Core Network Services NTP DHCP DNS: ccna/articles/2026-08/week-15/01-core-network-services-ntp-dhcp-dns.md
+          - 02 - Manual Cisco Clock And Time Zones: ccna/articles/2026-08/week-15/02-manual-cisco-clock-and-time-zones.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
