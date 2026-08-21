@@ -271,6 +271,7 @@ nav:
           - 04 - Syslog Network Visibility: ccna/articles/2026-08/week-16/04-syslog-network-visibility.md
           - 05 - Practice Monitoring On Real Devices: ccna/articles/2026-08/week-16/05-practice-monitoring-on-real-devices.md
           - 06 - Why QoS Matters: ccna/articles/2026-08/week-16/06-why-qos-matters.md
+          - 07 - QoS Congestion Delay Jitter And Loss: ccna/articles/2026-08/week-16/07-qos-congestion-delay-jitter-and-loss.md
   - Englishe:
       - englishe/index.md
       - Present Simple: englishe/present-simple.md
